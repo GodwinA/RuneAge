@@ -12,3 +12,7 @@ Saved
 *.suo
 *.xcodeproj
 *.xcworkspace
+.cache/*
+*.akd
+*.validationcache
+*.wem

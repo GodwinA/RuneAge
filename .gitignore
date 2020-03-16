@@ -98,3 +98,4 @@ Build/Android/res/*/*
 *.akd
 *.validationcache
 *.wem
+Wwise/RuneAge/RuneAge.anton.wsettings

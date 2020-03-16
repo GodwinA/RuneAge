@@ -11,7 +11,7 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}"/>
-						<Bus Name="Atmosphere" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}"/>
+						<Bus Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}"/>
 						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}"/>
 					</ChildrenList>
 				</Bus>

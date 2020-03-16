@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}">
+					<ChildrenList>
+						<Switch Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+						<Switch Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+						<Switch Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+						<Switch Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+						<Switch Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+						<Switch Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+						<Switch Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+						<Curve Name="" ID="{04594CE9-02F1-4468-8973-6F5F13A02A5B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

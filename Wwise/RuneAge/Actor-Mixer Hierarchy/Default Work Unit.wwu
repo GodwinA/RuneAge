@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+							<ObjectRef Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -336,7 +336,7 @@ Content provided by Vincent Gagnon
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+							<ObjectRef Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
 				</ActorMixer>
@@ -346,7 +346,7 @@ Content provided by Vincent Gagnon
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+							<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
 				</ActorMixer>
@@ -356,35 +356,12 @@ Content provided by Vincent Gagnon
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+							<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{EE80509F-952F-4A2A-8525-1E6B1AF6E07B}" ShortID="122882684">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}">
-									<Language>SFX</Language>
-									<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="73586014"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<BlendContainer Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" ShortID="43694063">
 							<PropertyList>
-								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -416,91 +393,1071 @@ Content provided by Vincent Gagnon
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 								</Reference>
-								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-									<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="ArcaneThrow" ID="{30E443D5-819E-4B70-97F4-642C695BF838}" ShortID="90788877">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{54BA06A7-086F-4D94-8EC3-1A871759E7DB}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="0.2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
+								<SwitchContainer Name="Shape" ID="{8F8FEA16-1F0A-4EA5-AED5-CB92B965B0DD}" ShortID="430906482">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}">
+										<BlendContainer Name="Tornado" ID="{9B649D9A-C58E-4D17-AA2E-005A3F54FE65}" ShortID="413775187">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Wall" ID="{99A80C9E-AD0D-463F-A85A-F3BF5F622884}" ShortID="478051257">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Shield" ID="{ABC9758F-7318-4801-BACB-7BFC4A0F379C}" ShortID="537356580">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Pillar" ID="{ED6CE895-9E20-4793-B322-E1604FA211EE}" ShortID="811914271">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Cone" ID="{50A60BF8-C6A7-46DD-A8F0-2621A711BEFC}" ShortID="377172201">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Ring" ID="{321253B8-22A4-46DE-B13B-BC4B348C541F}" ShortID="412210903">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Sphere" ID="{03F32D96-9BCD-4C28-897E-F4DD693FDB06}" ShortID="625419877">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.666879816160282"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.10274609202994"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Spells\ArcaneThrow.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="125000402"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="ArcaneWoosh" ID="{CC6E1D08-43D1-4172-8A32-180299804857}" ShortID="806727081">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4752E222-795F-4D66-9833-C0789EE1A9CB}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.639440114487"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.35226827388815"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Spells\ArcaneWoosh.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="755075785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="ArcaneThrow" ID="{30E443D5-819E-4B70-97F4-642C695BF838}" ShortID="90788877">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{54BA06A7-086F-4D94-8EC3-1A871759E7DB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.666879816160282"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.10274609202994"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Spells\ArcaneThrow.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="125000402"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ArcaneWoosh" ID="{CC6E1D08-43D1-4172-8A32-180299804857}" ShortID="806727081">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{4752E222-795F-4D66-9833-C0789EE1A9CB}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Shield" ID="{ABC9758F-7318-4801-BACB-7BFC4A0F379C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pillar" ID="{ED6CE895-9E20-4793-B322-E1604FA211EE}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sphere" ID="{03F32D96-9BCD-4C28-897E-F4DD693FDB06}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Tornado" ID="{9B649D9A-C58E-4D17-AA2E-005A3F54FE65}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wall" ID="{99A80C9E-AD0D-463F-A85A-F3BF5F622884}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ring" ID="{321253B8-22A4-46DE-B13B-BC4B348C541F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cone" ID="{50A60BF8-C6A7-46DD-A8F0-2621A711BEFC}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+												<ItemList>
+													<ItemRef Name="Cone" ID="{50A60BF8-C6A7-46DD-A8F0-2621A711BEFC}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+												<ItemList>
+													<ItemRef Name="Shield" ID="{ABC9758F-7318-4801-BACB-7BFC4A0F379C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+												<ItemList>
+													<ItemRef Name="Sphere" ID="{03F32D96-9BCD-4C28-897E-F4DD693FDB06}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+												<ItemList>
+													<ItemRef Name="Wall" ID="{99A80C9E-AD0D-463F-A85A-F3BF5F622884}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+												<ItemList>
+													<ItemRef Name="Tornado" ID="{9B649D9A-C58E-4D17-AA2E-005A3F54FE65}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+												<ItemList>
+													<ItemRef Name="Pillar" ID="{ED6CE895-9E20-4793-B322-E1604FA211EE}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+												<ItemList>
+													<ItemRef Name="Ring" ID="{321253B8-22A4-46DE-B13B-BC4B348C541F}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Fire" ID="{7DEE6958-0CAE-479C-91AC-23701A70A221}" ShortID="541898835">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A662BD84-9C40-42BB-BAC0-4B2CE6924A6F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1737608A-18A8-4A15-A766-EB59E19C71BF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Shape" ID="{B39EE1E1-9558-4F20-AC83-9DC3C67075EA}" ShortID="708858408">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="2.639440114487"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="4.35226827388815"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Spells\ArcaneWoosh.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="755075785"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<BlendContainer Name="Tornado" ID="{334065A3-8F18-402E-A94D-DDF7AE788F13}" ShortID="1049029477">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Wall" ID="{84D9C717-D6D4-4EB7-A336-389EA0BA2A4F}" ShortID="549887735">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Shield" ID="{E7C75BCD-ED24-461B-A8DE-241AF7166212}" ShortID="891652891">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Pillar" ID="{D35F79AF-C8F7-4DB2-8CCF-968FF982012E}" ShortID="511065298">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Cone" ID="{65BCD145-888A-42B4-9BBE-B2EDE15D878D}" ShortID="518461088">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Ring" ID="{4CFAFADB-BACB-49F5-8DE6-CFCEA5986733}" ShortID="550594884">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Sphere" ID="{624CF6E3-EFBA-40A3-810C-85736F4FD247}" ShortID="201681423">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Wall" ID="{84D9C717-D6D4-4EB7-A336-389EA0BA2A4F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cone" ID="{65BCD145-888A-42B4-9BBE-B2EDE15D878D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Tornado" ID="{334065A3-8F18-402E-A94D-DDF7AE788F13}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pillar" ID="{D35F79AF-C8F7-4DB2-8CCF-968FF982012E}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Shield" ID="{E7C75BCD-ED24-461B-A8DE-241AF7166212}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ring" ID="{4CFAFADB-BACB-49F5-8DE6-CFCEA5986733}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sphere" ID="{624CF6E3-EFBA-40A3-810C-85736F4FD247}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+												<ItemList>
+													<ItemRef Name="Cone" ID="{65BCD145-888A-42B4-9BBE-B2EDE15D878D}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+												<ItemList>
+													<ItemRef Name="Shield" ID="{E7C75BCD-ED24-461B-A8DE-241AF7166212}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+												<ItemList>
+													<ItemRef Name="Sphere" ID="{624CF6E3-EFBA-40A3-810C-85736F4FD247}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+												<ItemList>
+													<ItemRef Name="Wall" ID="{84D9C717-D6D4-4EB7-A336-389EA0BA2A4F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+												<ItemList>
+													<ItemRef Name="Tornado" ID="{334065A3-8F18-402E-A94D-DDF7AE788F13}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+												<ItemList>
+													<ItemRef Name="Pillar" ID="{D35F79AF-C8F7-4DB2-8CCF-968FF982012E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+												<ItemList>
+													<ItemRef Name="Ring" ID="{4CFAFADB-BACB-49F5-8DE6-CFCEA5986733}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Lightning" ID="{5F46D50D-A923-47DF-B306-6F955CAE4F20}" ShortID="545471541">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AA8A9E78-4580-41D8-A3D1-440DC4409982}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DA6349A9-554A-4E61-BC4F-D3E7313EB7DB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Shape" ID="{B9CD412B-1C39-4725-8C6A-42F1C96BE8FC}" ShortID="947791474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Tornado" ID="{C8096F4A-335E-49C8-80E0-63BD8DD16BE6}" ShortID="646802885">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Wall" ID="{51EEA6DC-8DC5-4CA5-B37F-ED140DDBF4A1}" ShortID="848785995">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Shield" ID="{6D7EF004-6101-4B27-A981-8539C7B15C32}" ShortID="1066700279">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Pillar" ID="{131A8D6A-90A1-42B2-87BE-84F965D0CCD4}" ShortID="1028136911">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Cone" ID="{B9A3757A-8E95-4DF2-B92D-9226C5F153E6}" ShortID="323709207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Ring" ID="{AFACEBDD-1954-4EB9-9BB8-7723E76FB53D}" ShortID="56459017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Sphere" ID="{85C51FB4-C6C7-447B-9DBB-F6F24CBCC4C5}" ShortID="629797859">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Shield" ID="{6D7EF004-6101-4B27-A981-8539C7B15C32}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Tornado" ID="{C8096F4A-335E-49C8-80E0-63BD8DD16BE6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pillar" ID="{131A8D6A-90A1-42B2-87BE-84F965D0CCD4}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cone" ID="{B9A3757A-8E95-4DF2-B92D-9226C5F153E6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sphere" ID="{85C51FB4-C6C7-447B-9DBB-F6F24CBCC4C5}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wall" ID="{51EEA6DC-8DC5-4CA5-B37F-ED140DDBF4A1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ring" ID="{AFACEBDD-1954-4EB9-9BB8-7723E76FB53D}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+												<ItemList>
+													<ItemRef Name="Cone" ID="{B9A3757A-8E95-4DF2-B92D-9226C5F153E6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+												<ItemList>
+													<ItemRef Name="Shield" ID="{6D7EF004-6101-4B27-A981-8539C7B15C32}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+												<ItemList>
+													<ItemRef Name="Sphere" ID="{85C51FB4-C6C7-447B-9DBB-F6F24CBCC4C5}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+												<ItemList>
+													<ItemRef Name="Wall" ID="{51EEA6DC-8DC5-4CA5-B37F-ED140DDBF4A1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+												<ItemList>
+													<ItemRef Name="Tornado" ID="{C8096F4A-335E-49C8-80E0-63BD8DD16BE6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+												<ItemList>
+													<ItemRef Name="Pillar" ID="{131A8D6A-90A1-42B2-87BE-84F965D0CCD4}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+												<ItemList>
+													<ItemRef Name="Ring" ID="{AFACEBDD-1954-4EB9-9BB8-7723E76FB53D}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Rock" ID="{17E89D3A-A936-44FC-9682-4DAB8B94C194}" ShortID="984207029">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1A925AE9-527A-4402-8585-BB5A963C64C0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{558E96D5-E0A8-4F61-A862-8032DEB45E92}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Shape" ID="{8B291E7A-3A82-496C-B10B-ECE342FECEEE}" ShortID="506027297">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Tornado" ID="{646AAC09-D577-4BC9-A74D-BD7847DA8077}" ShortID="322734151">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Wall" ID="{7B01C9D0-23E3-45BB-81CC-3EB1D87DC162}" ShortID="201359237">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Shield" ID="{7919A064-64F5-4A55-AB26-EF7FAF63859D}" ShortID="832055507">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Pillar" ID="{3F0796DB-CB10-474B-9F43-E1C3748061A9}" ShortID="1063926925">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Cone" ID="{8BFD628D-BC13-4B78-A0E4-206F4A99332F}" ShortID="628323397">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Ring" ID="{F917E71A-7A64-4163-86FE-3038621498DA}" ShortID="667229864">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Sphere" ID="{BCBDCE5E-ED3D-4358-A84A-DDECB35F3410}" ShortID="350933277">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{EE80509F-952F-4A2A-8525-1E6B1AF6E07B}" ShortID="122882684">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}">
+															<Language>SFX</Language>
+															<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="73586014"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Tornado" ID="{646AAC09-D577-4BC9-A74D-BD7847DA8077}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ring" ID="{F917E71A-7A64-4163-86FE-3038621498DA}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Sphere" ID="{BCBDCE5E-ED3D-4358-A84A-DDECB35F3410}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Shield" ID="{7919A064-64F5-4A55-AB26-EF7FAF63859D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cone" ID="{8BFD628D-BC13-4B78-A0E4-206F4A99332F}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wall" ID="{7B01C9D0-23E3-45BB-81CC-3EB1D87DC162}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pillar" ID="{3F0796DB-CB10-474B-9F43-E1C3748061A9}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+												<ItemList>
+													<ItemRef Name="Cone" ID="{8BFD628D-BC13-4B78-A0E4-206F4A99332F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+												<ItemList>
+													<ItemRef Name="Shield" ID="{7919A064-64F5-4A55-AB26-EF7FAF63859D}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+												<ItemList>
+													<ItemRef Name="Sphere" ID="{BCBDCE5E-ED3D-4358-A84A-DDECB35F3410}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+												<ItemList>
+													<ItemRef Name="Wall" ID="{7B01C9D0-23E3-45BB-81CC-3EB1D87DC162}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+												<ItemList>
+													<ItemRef Name="Tornado" ID="{646AAC09-D577-4BC9-A74D-BD7847DA8077}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+												<ItemList>
+													<ItemRef Name="Pillar" ID="{3F0796DB-CB10-474B-9F43-E1C3748061A9}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+												<ItemList>
+													<ItemRef Name="Ring" ID="{F917E71A-7A64-4163-86FE-3038621498DA}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Water" ID="{7820C31A-A2B3-4A1F-9B2C-96D4CBABC961}" ShortID="1043921411">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3766DAED-D15E-47C3-A013-2B359800B3BC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E408D86A-7B8E-42DB-83C4-3345538C0FF0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Shape" ID="{B2F0CAFF-0D44-413C-BB5A-29FD48F20B1F}" ShortID="506029066">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Shape" ID="{4144D5EA-4E48-4C4F-8738-F3F91BD2A40B}" WorkUnitID="{B295CD3B-5F44-425A-90D1-AA6F7BCA09F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="Tornado" ID="{3607F07D-344D-4416-B29F-5F5EC3680DF7}" ShortID="726976278">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Wall" ID="{11B6FBA1-77B8-40A3-9FB1-9E1814DA60D9}" ShortID="296579681">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Shield" ID="{A1897EAC-1978-4D6C-8065-C6276AD1F4B2}" ShortID="492590163">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Pillar" ID="{E3DAB0A2-8984-45E1-8557-15667727EC81}" ShortID="222585050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Cone" ID="{06442DB5-75A7-436E-A216-2DF82B248A30}" ShortID="602207020">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Ring" ID="{470B6A88-054E-457A-A7FB-37D3907F11D8}" ShortID="135909731">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+										<BlendContainer Name="Sphere" ID="{6EE47D08-E6F9-4D98-A54E-FFA95DBF4EDF}" ShortID="194410114">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Sphere" ID="{6EE47D08-E6F9-4D98-A54E-FFA95DBF4EDF}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Tornado" ID="{3607F07D-344D-4416-B29F-5F5EC3680DF7}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ring" ID="{470B6A88-054E-457A-A7FB-37D3907F11D8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Wall" ID="{11B6FBA1-77B8-40A3-9FB1-9E1814DA60D9}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Pillar" ID="{E3DAB0A2-8984-45E1-8557-15667727EC81}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Shield" ID="{A1897EAC-1978-4D6C-8065-C6276AD1F4B2}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Cone" ID="{06442DB5-75A7-436E-A216-2DF82B248A30}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+												<ItemList>
+													<ItemRef Name="Cone" ID="{06442DB5-75A7-436E-A216-2DF82B248A30}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Shield" ID="{7B919D77-87DF-4A55-B33B-37C3325925A6}"/>
+												<ItemList>
+													<ItemRef Name="Shield" ID="{A1897EAC-1978-4D6C-8065-C6276AD1F4B2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Sphere" ID="{930CE9A1-E423-44EC-9188-10B64A0F032B}"/>
+												<ItemList>
+													<ItemRef Name="Sphere" ID="{6EE47D08-E6F9-4D98-A54E-FFA95DBF4EDF}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
+												<ItemList>
+													<ItemRef Name="Wall" ID="{11B6FBA1-77B8-40A3-9FB1-9E1814DA60D9}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tornado" ID="{CCCE94BD-CF49-4546-B122-CE7E0FF44032}"/>
+												<ItemList>
+													<ItemRef Name="Tornado" ID="{3607F07D-344D-4416-B29F-5F5EC3680DF7}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pillar" ID="{E58898FA-96B3-4BE7-B235-717498DAD48E}"/>
+												<ItemList>
+													<ItemRef Name="Pillar" ID="{E3DAB0A2-8984-45E1-8557-15667727EC81}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Ring" ID="{509E00FD-7778-45B4-9C55-BB1589D154A1}"/>
+												<ItemList>
+													<ItemRef Name="Ring" ID="{470B6A88-054E-457A-A7FB-37D3907F11D8}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
@@ -511,7 +1468,7 @@ Content provided by Vincent Gagnon
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+							<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
 				</ActorMixer>

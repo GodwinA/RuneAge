@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>F:\Documents\WwiseProjects\RuneAge\</ProjectRoot>
-		<SourceFilesRoot>F:\Documents\WwiseProjects\RuneAge\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>F:\Documents\WwiseProjects\RuneAge\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\Git\GitHub\RuneAge\Wwise\RuneAge\</ProjectRoot>
+		<SourceFilesRoot>F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Git\GitHub\RuneAge\Wwise\RuneAge\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\Documents\WwiseProjects\RuneAge\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Git\GitHub\RuneAge\Wwise\RuneAge\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Default Work Unit\Ambience\Ambience"/>
+				<Event Id="85412153" Name="ambience" ObjectPath="\Events\Default Work Unit\Ambience\ambience"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>

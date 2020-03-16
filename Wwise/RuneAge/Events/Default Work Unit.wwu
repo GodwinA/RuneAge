@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Ambience" ID="{168CFCBB-258C-44E1-BA3B-84DC89E6CBF6}" ShortID="1032288463">
 					<ChildrenList>
-						<Event Name="Ambience" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
+						<Event Name="ambience" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
 							<ChildrenList>
 								<Action Name="" ID="{9D3A9F83-BE2B-4A77-A838-E0C04218D8B3}" ShortID="891890741">
 									<ReferenceList>
@@ -21,12 +21,56 @@
 				<Folder Name="Characters" ID="{34E3EC62-B40C-473B-A6E2-2A36615EA42D}" ShortID="303333414"/>
 				<Folder Name="Spells" ID="{3BFD0A90-D8CB-4A79-990E-0362920391EB}" ShortID="654796595">
 					<ChildrenList>
-						<Event Name="ArcaneSpell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}">
+						<Event Name="arcane_spell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}">
 							<ChildrenList>
 								<Action Name="" ID="{F7339B61-1D6E-4BC1-B015-9DDCBC410C77}" ShortID="996118657">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="rock_spell" ID="{394017D0-84B1-4E7A-B09E-5C978C31FE27}">
+							<ChildrenList>
+								<Action Name="" ID="{689968DB-94E5-4E9B-AD5E-B8865A0FB33B}" ShortID="511497541">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rock" ID="{17E89D3A-A936-44FC-9682-4DAB8B94C194}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="lightning_spell" ID="{876D42D0-B0AF-4C27-A9B6-5E192EB4131E}">
+							<ChildrenList>
+								<Action Name="" ID="{EF6A9500-25E8-4BEE-80CE-D2F4B82E491A}" ShortID="650892337">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lightning" ID="{5F46D50D-A923-47DF-B306-6F955CAE4F20}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="water_spell" ID="{6AE4A522-55C7-4E58-94D3-9E8E02615CEF}">
+							<ChildrenList>
+								<Action Name="" ID="{EA399341-D683-43CF-BBBC-9D10B678F2BA}" ShortID="913855997">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Water" ID="{7820C31A-A2B3-4A1F-9B2C-96D4CBABC961}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="fire_spell" ID="{C32769CE-A1C4-4EB9-A6EF-7A894635551D}">
+							<ChildrenList>
+								<Action Name="" ID="{21C367A8-99A4-45D1-89AA-45E2B67B978D}" ShortID="996757523">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire" ID="{7DEE6958-0CAE-479C-91AC-23701A70A221}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

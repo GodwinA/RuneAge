@@ -3,8 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{030D9377-4605-4829-A74C-A3F5E60A7FAB}">
 			<PropertyList>
+				<Property Name="Event Action List\{394017D0-84B1-4E7A-B09E-5C978C31FE27}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6AE4A522-55C7-4E58-94D3-9E8E02615CEF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7B9A212C-8872-4695-932E-465726B679B0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{876D42D0-B0AF-4C27-A9B6-5E192EB4131E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C32769CE-A1C4-4EB9-A6EF-7A894635551D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

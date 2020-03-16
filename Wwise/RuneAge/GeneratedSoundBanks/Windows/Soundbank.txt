@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Ambience\Ambience	
+	85412153	ambience			\Default Work Unit\Ambience\ambience	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	129	MIDI note velocity			\MIDI note velocity	

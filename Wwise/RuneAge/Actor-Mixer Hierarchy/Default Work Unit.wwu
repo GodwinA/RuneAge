@@ -4,7 +4,14 @@
 		<WorkUnit Name="Default Work Unit" ID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Ambience" ID="{4E6F6C0C-55C6-4659-8DB1-384A4047F8CD}" ShortID="769302743">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="AmbienceAtt" ID="{F8A58747-11D9-4B86-8670-8C1896F4AC4A}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
@@ -331,6 +338,10 @@ Content provided by Vincent Gagnon
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Music" ID="{8D0F75D5-0EB2-4956-861D-00312BF84BBC}" ShortID="714797789">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
@@ -341,6 +352,11 @@ Content provided by Vincent Gagnon
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="Characters" ID="{2073B00A-68DA-4DAE-964C-E08F734021FB}" ShortID="8644379">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
@@ -351,7 +367,13 @@ Content provided by Vincent Gagnon
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" ShortID="832043670">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SpellAtt" ID="{49C8FB9A-0FED-440F-8881-5D6AD4DA975B}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 								</Reference>
@@ -411,7 +433,26 @@ Content provided by Vincent Gagnon
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Spells" ID="{150DDFE2-A08D-48BB-8B43-990F36BE2D74}" ShortID="459165803">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="SpellAtt" ID="{49C8FB9A-0FED-440F-8881-5D6AD4DA975B}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
@@ -535,15 +576,9 @@ Content provided by Vincent Gagnon
 											</ReferenceList>
 										</BlendContainer>
 										<BlendContainer Name="Sphere" ID="{03F32D96-9BCD-4C28-897E-F4DD693FDB06}" ShortID="625419877">
-											<PropertyList>
-												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
@@ -558,6 +593,12 @@ Content provided by Vincent Gagnon
 																	<Modifier Name="" ID="{4752E222-795F-4D66-9833-C0789EE1A9CB}"/>
 																</ModifierInfo>
 															</ModifierList>
+														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="RenderEffect0" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
 														</Property>
 													</PropertyList>
 													<ReferenceList>
@@ -1183,28 +1224,196 @@ Content provided by Vincent Gagnon
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{EE80509F-952F-4A2A-8525-1E6B1AF6E07B}" ShortID="122882684">
+												<RandomSequenceContainer Name="RockSphere" ID="{2A7C4418-E10B-4D41-9A47-FE70EF4467F3}" ShortID="927069991">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}">
-															<Language>SFX</Language>
-															<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="73586014"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{EE80509F-952F-4A2A-8525-1E6B1AF6E07B}" ShortID="122882684">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.42709860893282"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="73586014"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6_01" ID="{096E8D73-2E5B-4EDE-9F49-E17E4B2322F8}" ShortID="306599965">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{7D7C4351-BE39-46A0-B7AD-21AFB34A1F33}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="1.31577477390813"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.69274837450965"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="12501531"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{7D7C4351-BE39-46A0-B7AD-21AFB34A1F33}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6_02" ID="{DA01AC85-8923-44EE-B2A1-4EA6C649767A}" ShortID="254082232">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{36C370A4-0F67-48CD-84F0-C8F6CE3E29B7}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="2.64868521929041"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="4.33333592109301"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="324670870"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{36C370A4-0F67-48CD-84F0-C8F6CE3E29B7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6_03" ID="{5B01236E-88D2-4246-B7DA-D20096502CE6}" ShortID="563127211">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{6AA7433D-6FA3-4CCA-8D34-3AECF601DB7D}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="4.16672211542022"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="6.31418894409167"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="308439537"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{6AA7433D-6FA3-4CCA-8D34-3AECF601DB7D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6_04" ID="{D460B120-FA30-4154-9CB3-A7BC2FFC892A}" ShortID="151342251">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A82B672-CBB4-40C8-8640-C9EDABBFFEA0}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="6.11330823238552"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="7.73957005162235"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1057281826"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A82B672-CBB4-40C8-8640-C9EDABBFFEA0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6_05" ID="{A7E965F7-0795-45BA-9541-AD0A64992FD6}" ShortID="540588551">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{6937FBAC-36AF-42FF-B102-C2D6B393E2FD}">
+																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.132998797540471"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.655494073592322"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="7.7016931797994"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="9.3715337655422"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="773752658"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{6937FBAC-36AF-42FF-B102-C2D6B393E2FD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												</RandomSequenceContainer>
 											</ChildrenList>
 										</BlendContainer>
 									</ChildrenList>
@@ -1480,7 +1689,15 @@ Content provided by Vincent Gagnon
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Interaction" ID="{703F34BD-E959-4131-910E-A2A207C1FA48}" ShortID="596530801">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="InteractionAtt" ID="{734C5F5D-031C-4427-ADA1-890A4D471F6C}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>
@@ -1490,6 +1707,10 @@ Content provided by Vincent Gagnon
 					</ReferenceList>
 				</ActorMixer>
 				<ActorMixer Name="UI" ID="{912EC007-1B5E-4BD3-86E2-A6F2CA6B4C5D}" ShortID="82154340">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>

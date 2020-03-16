@@ -13,6 +13,31 @@
 						<Bus Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}"/>
 						<Bus Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}"/>
 						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}"/>
+						<AuxBus Name="Reverb" ID="{B271A05A-EAB9-4DC0-941F-0935612B16A8}">
+							<ChildrenList>
+								<AuxBus Name="LargeReverb" ID="{188A1010-DD3B-4710-9FCB-FA498074FBF8}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="MediumReverb" ID="{79F2DD4D-2652-4BE4-BA05-13C7C36E6D6C}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Medium" ID="{F5C06EC1-E4A4-4332-A7D3-A89E2986B74F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+								<AuxBus Name="SmallReverb" ID="{ED27D6D9-2E27-4ED9-89F9-0169D4A54561}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -93,8 +93,6 @@ Build/Android/res/*/*
 # End of https://www.gitignore.io/api/unrealengine
 
 
-Config/*
-
 # Wwise Stuff
 .cache/*
 *.akd

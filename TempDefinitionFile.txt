@@ -1,1 +1,2 @@
 Soundbank	"Atmosphere"
+Soundbank	"ArcaneSpell"

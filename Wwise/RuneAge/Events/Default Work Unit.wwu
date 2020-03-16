@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E333D936-36F1-4565-8E0A-B08320628937}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E333D936-36F1-4565-8E0A-B08320628937}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambience" ID="{168CFCBB-258C-44E1-BA3B-84DC89E6CBF6}" ShortID="1032288463">
+					<ChildrenList>
+						<Event Name="Ambience" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
+							<ChildrenList>
+								<Action Name="" ID="{9D3A9F83-BE2B-4A77-A838-E0C04218D8B3}" ShortID="891890741">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Characters" ID="{34E3EC62-B40C-473B-A6E2-2A36615EA42D}" ShortID="303333414"/>
+				<Folder Name="Spells" ID="{3BFD0A90-D8CB-4A79-990E-0362920391EB}" ShortID="654796595">
+					<ChildrenList>
+						<Event Name="ArcaneSpell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}">
+							<ChildrenList>
+								<Action Name="" ID="{F7339B61-1D6E-4BC1-B015-9DDCBC410C77}" ShortID="996118657">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{BAF3725D-E4EF-4757-9930-04AA1A065E86}" ShortID="299384006"/>
+				<Folder Name="Interaction" ID="{2F016998-ED50-43C4-B9E9-B8FCA915DE3C}" ShortID="998030666"/>
+				<Folder Name="UI" ID="{0E7BF3A0-57F6-4E71-A117-52AD277276ED}" ShortID="147736556"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

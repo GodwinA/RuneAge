@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Ambience" ID="{4E6F6C0C-55C6-4659-8DB1-384A4047F8CD}" ShortID="769302743">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Ambience" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" ShortID="431758979">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="COSMIC WIND" ID="{C8B5D558-18B0-42A9-9780-682004669458}" ShortID="380435808">
+									<Comment>Audiokinetic Inc. All rights reserved.
+Content provided by Vincent Gagnon
+© 2014 Vincent Gagnon</Comment>
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{84DA2ACF-4911-4BA7-987A-C75151AFFD7C}">
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{A38E1384-4564-46EC-8B26-6928E2BF7305}" ShortID="86226795" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+														<Property Name="FilterTypeBand2" Type="int32" Value="2"/>
+														<Property Name="FrequencyBand1" Type="Real32" Value="500">
+															<RTPCList>
+																<RTPC Name="" ID="{E2977374-8798-4023-BF11-7A48CB7E2D33}" ShortID="429865997">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom CreatedFrom="{015C6DEE-B8AF-404E-9CFA-605BA5A118FF}">
+																				<ModulatorLfo Name="Modulator LFO (Custom)" ID="{77616255-C1D8-4A48-B247-B499CC07AFC7}" ShortID="436514448">
+																					<PropertyList>
+																						<Property Name="LfoAttack" Type="Real64" Value="3.84"/>
+																						<Property Name="LfoDepth" Type="Real64" Value="74.7"/>
+																						<Property Name="LfoFrequency" Type="Real64" Value="0.34"/>
+																						<Property Name="LfoSmoothing" Type="Real64" Value="41"/>
+																						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+																					</PropertyList>
+																				</ModulatorLfo>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{40F6B79B-ECFD-423C-8079-43B5382641CF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>556.11075</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>5615.8706</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="FrequencyBand2" Type="Real32" Value="806"/>
+														<Property Name="OnOffBand2" Type="bool" Value="False"/>
+														<Property Name="OnOffBand3" Type="bool" Value="False"/>
+														<Property Name="QFactorBand2" Type="Real32" Value="62.8"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom CreatedFrom="{84DA2ACF-4911-4BA7-987A-C75151AFFD7C}">
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{3B235336-79B1-4171-9791-49CB6024340A}" ShortID="553469370" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand1" Type="int32" Value="2"/>
+														<Property Name="FrequencyBand1" Type="Real32" Value="500">
+															<RTPCList>
+																<RTPC Name="" ID="{F193E82E-C621-49EE-A0F0-AB70055A60C3}" ShortID="381916245">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<Custom CreatedFrom="{015C6DEE-B8AF-404E-9CFA-605BA5A118FF}">
+																				<ModulatorLfo Name="Modulator LFO (Custom)" ID="{5250BC96-46B0-439F-B751-2A638F7E598F}" ShortID="986443769">
+																					<PropertyList>
+																						<Property Name="LfoDepth" Type="Real64" Value="19.5"/>
+																						<Property Name="LfoFrequency" Type="Real64" Value="1.74"/>
+																					</PropertyList>
+																				</ModulatorLfo>
+																			</Custom>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{D5DE8880-9F5C-402C-ACB4-FF1B04542C58}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>249.32982</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>7374.65882</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+														<Property Name="OnOffBand2" Type="bool" Value="False"/>
+														<Property Name="OnOffBand3" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="COSMIC WIND" ID="{4E1914FD-296B-48C0-89D5-0646F9B0A54D}" ShortID="895289635" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+											<Comment>Audiokinetic Inc. All rights reserved.
+Content provided by Vincent Gagnon
+© 2014 Vincent Gagnon</Comment>
+											<PropertyList>
+												<Property Name="BaseFrequency" Type="Real32" Value="500"/>
+												<Property Name="FmAmount" Type="Real32" Value="21.6"/>
+												<Property Name="FrequencyMode" Type="int32" Value="1"/>
+												<Property Name="NoiseLevel" Type="Real32" Value="3"/>
+												<Property Name="Osc1Level" Type="Real32" Value="-2"/>
+												<Property Name="Osc1Pwm" Type="Real32" Value="50.1"/>
+												<Property Name="Osc1Transpose" Type="int32" Value="-3069">
+													<RTPCList>
+														<RTPC Name="" ID="{19D24BCC-679A-4C34-A5D2-793123C5B117}" ShortID="446478549">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom CreatedFrom="{015C6DEE-B8AF-404E-9CFA-605BA5A118FF}">
+																		<ModulatorLfo Name="Modulator LFO (Custom)" ID="{F0ED4076-3097-4152-9F66-5E6C84A92ED1}" ShortID="315740417">
+																			<PropertyList>
+																				<Property Name="LfoDepth" Type="Real64" Value="67.9"/>
+																				<Property Name="LfoFrequency" Type="Real64" Value="975.7"/>
+																			</PropertyList>
+																		</ModulatorLfo>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{49DBFFDA-BCAA-4E3E-88DA-966AA345776E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-372</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>3377</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Osc2Level" Type="Real32" Value="-7"/>
+												<Property Name="Osc2Transpose" Type="int32" Value="-2387">
+													<RTPCList>
+														<RTPC Name="" ID="{322DBC04-0151-4AE5-9AC0-5C45E212DEF1}" ShortID="1013095634">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom CreatedFrom="{123786D6-0A62-4697-94CC-7B8C5EBE3405}">
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{361CA5D7-4212-4BFD-9CC0-718619008BC1}" ShortID="746531749">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackCurve" Type="Real64" Value="23"/>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.416"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.237"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.726"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="91.1"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{ACAFE5CA-C33F-4C4B-84BF-9B624775F68D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-6014</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-637</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OutputLevel" Type="Real32" Value="-6">
+													<RTPCList>
+														<RTPC Name="" ID="{3649F303-12E0-48D8-9569-41D5F5EBE4F8}" ShortID="262677358">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom CreatedFrom="{123786D6-0A62-4697-94CC-7B8C5EBE3405}">
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{AD85C35A-80F1-4841-A320-3871356505FD}" ShortID="447865220">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackCurve" Type="Real64" Value="23"/>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.416"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.237"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{BBC9EA40-0D8E-42EB-A628-F640F4A4D063}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>8.21909</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{412CF835-DD47-4ADD-B04A-8F7303815570}" ShortID="185946018">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="MIDI note velocity" ID="{B618CC3D-04FA-4149-A36B-37B8A1F2B642}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{32B8C4DE-653F-4DC3-B6E2-C0CFB1F9D486}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-20</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>127</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{0F122446-0203-43A6-99AA-B68F0EFD339A}" ShortID="420887355">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<Custom>
+																		<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{046DC550-6DDE-45D8-B22F-64E9B42D3D7A}" ShortID="236010242">
+																			<PropertyList>
+																				<Property Name="EnvelopeAttackCurve" Type="Real64" Value="30"/>
+																				<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.553"/>
+																				<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.753"/>
+																				<Property Name="EnvelopeReleaseTime" Type="Real64" Value="1"/>
+																				<Property Name="EnvelopeSustainLevel" Type="Real64" Value="91.1"/>
+																			</PropertyList>
+																		</ModulatorEnvelope>
+																	</Custom>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{96411348-F7B0-4A58-B4D2-882CCB9B93E1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-96</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="COSMIC WIND" ID="{4E1914FD-296B-48C0-89D5-0646F9B0A54D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{8D0F75D5-0EB2-4956-861D-00312BF84BBC}" ShortID="714797789">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Characters" ID="{2073B00A-68DA-4DAE-964C-E08F734021FB}" ShortID="8644379">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Spells" ID="{150DDFE2-A08D-48BB-8B43-990F36BE2D74}" ShortID="459165803">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{EE80509F-952F-4A2A-8525-1E6B1AF6E07B}" ShortID="122882684">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}">
+									<Language>SFX</Language>
+									<AudioFile>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="73586014"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Earthquake, Rumble, Rocks In Motion 01 SND13403 6" ID="{4A94DAAA-2AAA-4E4F-9F28-D0E27DCE8DB7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" ShortID="43694063">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{93F29F30-C258-439D-A8CF-AA22A2B6B153}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{668FB4EE-1486-4B18-B136-AA62B3ED461B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ArcaneThrow" ID="{30E443D5-819E-4B70-97F4-642C695BF838}" ShortID="90788877">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{54BA06A7-086F-4D94-8EC3-1A871759E7DB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.666879816160282"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.10274609202994"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Spells\ArcaneThrow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="125000402"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ArcaneWoosh" ID="{CC6E1D08-43D1-4172-8A32-180299804857}" ShortID="806727081">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4752E222-795F-4D66-9833-C0789EE1A9CB}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.639440114487"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.35226827388815"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Spells\ArcaneWoosh.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="755075785"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Interaction" ID="{703F34BD-E959-4131-910E-A2A207C1FA48}" ShortID="596530801">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="UI" ID="{912EC007-1B5E-4BD3-86E2-A6F2CA6B4C5D}" ShortID="82154340">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

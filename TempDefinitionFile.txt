@@ -1,6 +1,7 @@
-Soundbank	"ambience"
 Soundbank	"arcane_spell"
+Soundbank	"ambience"
 Soundbank	"fire_spell"
 Soundbank	"lightning_spell"
 Soundbank	"rock_spell"
 Soundbank	"water_spell"
+Soundbank	"cast_spell"

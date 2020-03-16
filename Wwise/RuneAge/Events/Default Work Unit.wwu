@@ -18,7 +18,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Characters" ID="{34E3EC62-B40C-473B-A6E2-2A36615EA42D}" ShortID="303333414"/>
+				<Folder Name="Characters" ID="{34E3EC62-B40C-473B-A6E2-2A36615EA42D}" ShortID="303333414">
+					<ChildrenList>
+						<Event Name="cast_spell" ID="{E70ABF67-958C-4233-BA4E-BADB5D3840F4}">
+							<ChildrenList>
+								<Action Name="" ID="{143FC6A3-B7D2-462C-8713-80D33A24816A}" ShortID="91905336">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{775032D5-A783-4FB4-BCA7-3B1359FAB0A7}" ShortID="265214486">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Spells" ID="{3BFD0A90-D8CB-4A79-990E-0362920391EB}" ShortID="654796595">
 					<ChildrenList>
 						<Event Name="arcane_spell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}">

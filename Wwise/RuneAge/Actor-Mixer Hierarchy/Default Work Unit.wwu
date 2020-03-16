@@ -349,6 +349,66 @@ Content provided by Vincent Gagnon
 							<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" ShortID="832043670">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ArcaneThrow" ID="{30E443D5-819E-4B70-97F4-642C695BF838}" ShortID="90788877">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{54BA06A7-086F-4D94-8EC3-1A871759E7DB}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.119336388154998"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.947671317701453"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.730057904007045"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.10274609202994"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Spells\ArcaneThrow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="125000402"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Spells" ID="{150DDFE2-A08D-48BB-8B43-990F36BE2D74}" ShortID="459165803">
 					<ReferenceList>
@@ -514,6 +574,7 @@ Content provided by Vincent Gagnon
 													<ChildrenList>
 														<AudioFileSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}">
 															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0701978753852929"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="2.639440114487"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="4.35226827388815"/>
@@ -527,50 +588,6 @@ Content provided by Vincent Gagnon
 													</ChildrenList>
 													<ActiveSourceList>
 														<ActiveSource Name="ArcaneWoosh" ID="{D2930C10-9667-4F2A-99B4-37C727BDA0F8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="ArcaneThrow" ID="{30E443D5-819E-4B70-97F4-642C695BF838}" ShortID="90788877">
-													<PropertyList>
-														<Property Name="InitialDelay" Type="Real64">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{54BA06A7-086F-4D94-8EC3-1A871759E7DB}">
-																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="0.2"/>
-																		</PropertyList>
-																	</Modifier>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
-														</Reference>
-														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-															<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.666879816160282"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="3.10274609202994"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Spells\ArcaneThrow.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="125000402"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="ArcaneThrow" ID="{D923DA2F-9117-45F9-B0FB-620008C099EA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>

@@ -94,8 +94,10 @@ Build/Android/res/*/*
 
 
 # Wwise Stuff
-.cache/*
 *.akd
 *.validationcache
 *.wem
+IncrementalSoundBankData.xml
+Wwise/RuneAge/RuneAge.wproj
 Wwise/RuneAge/RuneAge.anton.wsettings
+Wwise/RuneAge/.cache/*

@@ -93,11 +93,13 @@ Build/Android/res/*/*
 # End of https://www.gitignore.io/api/unrealengine
 
 
-# Wwise Stuff
+# Ignore Wwise files
+TempDefinitionFile.txt
 *.akd
-*.validationcache
 *.wem
+*.prof
 IncrementalSoundBankData.xml
 Wwise/RuneAge/RuneAge.wproj
 Wwise/RuneAge/RuneAge.anton.wsettings
 Wwise/RuneAge/.cache/*
+Wwise/RuneAge/*.validationcache

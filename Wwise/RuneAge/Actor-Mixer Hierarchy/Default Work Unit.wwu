@@ -368,7 +368,17 @@ Content provided by Vincent Gagnon
 					<ChildrenList>
 						<BlendContainer Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" ShortID="832043670">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -437,17 +447,7 @@ Content provided by Vincent Gagnon
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-						<Property Name="MaxSoundPerInstance" Type="int16">
-							<ValueList>
-								<Value>25</Value>
-							</ValueList>
-						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -463,6 +463,12 @@ Content provided by Vincent Gagnon
 					<ChildrenList>
 						<BlendContainer Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" ShortID="43694063">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -475,6 +481,11 @@ Content provided by Vincent Gagnon
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -708,6 +719,12 @@ Content provided by Vincent Gagnon
 						</BlendContainer>
 						<BlendContainer Name="Fire" ID="{7DEE6958-0CAE-479C-91AC-23701A70A221}" ShortID="541898835">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -720,6 +737,11 @@ Content provided by Vincent Gagnon
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -905,6 +927,12 @@ Content provided by Vincent Gagnon
 						</BlendContainer>
 						<BlendContainer Name="Lightning" ID="{5F46D50D-A923-47DF-B306-6F955CAE4F20}" ShortID="545471541">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -917,6 +945,11 @@ Content provided by Vincent Gagnon
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -1102,6 +1135,12 @@ Content provided by Vincent Gagnon
 						</BlendContainer>
 						<BlendContainer Name="Rock" ID="{17E89D3A-A936-44FC-9682-4DAB8B94C194}" ShortID="984207029">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1114,6 +1153,11 @@ Content provided by Vincent Gagnon
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -1491,6 +1535,12 @@ Content provided by Vincent Gagnon
 						</BlendContainer>
 						<BlendContainer Name="Water" ID="{7820C31A-A2B3-4A1F-9B2C-96D4CBABC961}" ShortID="1043921411">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1503,6 +1553,11 @@ Content provided by Vincent Gagnon
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>

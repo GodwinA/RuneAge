@@ -22,17 +22,6 @@
 					<ChildrenList>
 						<Event Name="cast_spell" ID="{E70ABF67-958C-4233-BA4E-BADB5D3840F4}">
 							<ChildrenList>
-								<Action Name="" ID="{143FC6A3-B7D2-462C-8713-80D33A24816A}" ShortID="91905336">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{775032D5-A783-4FB4-BCA7-3B1359FAB0A7}" ShortID="265214486">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -48,17 +37,6 @@
 					<ChildrenList>
 						<Event Name="arcane_spell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}">
 							<ChildrenList>
-								<Action Name="" ID="{F7339B61-1D6E-4BC1-B015-9DDCBC410C77}" ShortID="996118657">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Arcane" ID="{386E94CA-02A9-448E-BB75-C1F80EFE8D6C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{07795D83-A752-4104-8BE7-66A71684CECB}" ShortID="291123441">
 									<ReferenceList>
 										<Reference Name="Target">

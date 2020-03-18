@@ -14,12 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID ARCANE_SPELL = 2637742288U;
-        static const AkUniqueID CAST_SPELL = 4080882651U;
-        static const AkUniqueID FIRE_SPELL = 509606434U;
-        static const AkUniqueID LIGHTNING_SPELL = 7154402U;
-        static const AkUniqueID ROCK_SPELL = 3371098341U;
-        static const AkUniqueID WATER_SPELL = 3672226213U;
     } // namespace EVENTS
 
     namespace STATES

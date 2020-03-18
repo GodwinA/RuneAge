@@ -358,6 +358,9 @@ Content provided by Vincent Gagnon
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="CharacterAtt" ID="{206B3E64-25D5-44E2-97A6-74EEA7BABEBA}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 						</Reference>

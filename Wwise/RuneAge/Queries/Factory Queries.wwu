@@ -210,6 +210,12 @@
 										<Property Name="PropertyName" Type="string" Value="IsStreamingEnabled"/>
 									</PropertyList>
 								</SearchCriteria>
+								<SearchCriteria Name="SourceDuration" ID="{33626353-B6A7-4BE0-8C4B-ED8F55083D16}" SearchOperationID="{7DF1534B-3135-4D02-9320-401A9AA39E5A}">
+									<PropertyList>
+										<Property Name="LeftValue" Type="Real64" Value="60"/>
+										<Property Name="NumericOperator" Type="int16" Value="2"/>
+									</PropertyList>
+								</SearchCriteria>
 							</ChildrenList>
 						</Query>
 						<Query Name="Sound - LFE higher than -96,3 dB" ID="{D0F78690-2DAE-4259-9241-994FD855C1C3}">

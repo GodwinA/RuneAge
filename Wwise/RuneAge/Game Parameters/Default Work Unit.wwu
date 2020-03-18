@@ -4,6 +4,12 @@
 		<WorkUnit Name="Default Work Unit" ID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+				<GameParameter Name="rtpc_area_fade_distance" ID="{B7D9D321-0FD5-45F3-96DE-E59D7F3A809D}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

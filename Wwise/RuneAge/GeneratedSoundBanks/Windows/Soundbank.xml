@@ -13,11 +13,15 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="85412153" Name="ambience" ObjectPath="\Events\Default Work Unit\Ambience\ambience" DurationType="Unknown"/>
+				<Event Id="85412153" Name="ambience" ObjectPath="\Events\Default Work Unit\Ambience\ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="578799138" Language="SFX">
+							<ShortName>Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218.wav</ShortName>
+							<Path>SFX\Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218_C1435D71.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="129" Name="MIDI note velocity" ObjectPath="MIDI\MIDI note velocity"/>
-			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

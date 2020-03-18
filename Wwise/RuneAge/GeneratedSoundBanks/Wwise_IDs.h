@@ -54,6 +54,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID INTENSITY = 2470328564U;
+        static const AkUniqueID RTPC_AREA_FADE_DISTANCE = 1799335409U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

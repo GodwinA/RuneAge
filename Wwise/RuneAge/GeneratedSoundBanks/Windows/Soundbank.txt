@@ -1,23 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	85412153	ambience			\Default Work Unit\Ambience\ambience	
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	129	MIDI note velocity			\MIDI note velocity	
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	962167441	Modulator Time (Custom)				
 
-Modulator LFO	ID	Name			Wwise Object Path	Notes
-	315740417	Modulator LFO (Custom)				
-	436514448	Modulator LFO (Custom)				
-	986443769	Modulator LFO (Custom)				
-
-Modulator Envelope	ID	Name			Wwise Object Path	Notes
-	236010242	Modulator Envelope (Custom)				
-	447865220	Modulator Envelope (Custom)				
-	746531749	Modulator Envelope (Custom)				
-
-Effect plug-ins	ID	Name	Type				Notes
-	86226795	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
-	553469370	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
-
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	895289635	COSMIC WIND	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\COSMIC WIND\COSMIC WIND	Audiokinetic Inc. All rights reserved. Content provided by Vincent Gagnon © 2014 Vincent Gagnon
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	578799138	Ambience, Forest, Calm, No Birds, Winter, Airy SND5218	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218_C1435D71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218		1926813
 

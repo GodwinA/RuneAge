@@ -34,6 +34,13 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="Surface" ID="{044A141B-78FD-47BE-878B-5B2609823C80}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{4C36E6DF-A64F-411A-9F1F-01AEF0F8E6E9}"/>
+						<Switch Name="Stone" ID="{60880D7D-8637-4CC6-838C-F19C4685DB2C}"/>
+						<Switch Name="Wood" ID="{CF52C889-42B7-46D1-A9E7-928BA8E1AE2F}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

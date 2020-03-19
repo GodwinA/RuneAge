@@ -8,6 +8,7 @@
 						<ObjectRef Name="cast_spell" ID="{E70ABF67-958C-4233-BA4E-BADB5D3840F4}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ambience_outside" ID="{7B9A212C-8872-4695-932E-465726B679B0}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="arcane_spell" ID="{9629DBDA-E942-48B6-AB87-D1FEDC0A3244}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="character_footsteps" ID="{82A21FCE-354F-4986-A6F8-1655C5D56A52}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ambience_inside" ID="{FE0C04E0-70A7-4BF9-AE77-C217C4BA5096}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="lightning_spell" ID="{876D42D0-B0AF-4C27-A9B6-5E192EB4131E}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="water_spell" ID="{6AE4A522-55C7-4E58-94D3-9E8E02615CEF}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}" Origin="Manual" Filter="7"/>

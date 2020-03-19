@@ -42,6 +42,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="character_footsteps" ID="{82A21FCE-354F-4986-A6F8-1655C5D56A52}">
+							<ChildrenList>
+								<Action Name="" ID="{DE98987B-94FC-407A-8845-F8F6F3565E7C}" ShortID="793607416">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Foosteps" ID="{A69162D8-4394-4BB7-92C1-610E8D6D66B4}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Spells" ID="{3BFD0A90-D8CB-4A79-990E-0362920391EB}" ShortID="654796595">

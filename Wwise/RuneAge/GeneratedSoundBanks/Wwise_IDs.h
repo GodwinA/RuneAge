@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID AMBIENCE_OUTSIDE = 3996256281U;
         static const AkUniqueID ARCANE_SPELL = 2637742288U;
         static const AkUniqueID CAST_SPELL = 4080882651U;
+        static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
         static const AkUniqueID FIRE_SPELL = 509606434U;
         static const AkUniqueID LIGHTNING_SPELL = 7154402U;
         static const AkUniqueID ROCK_SPELL = 3371098341U;
@@ -67,6 +68,18 @@ namespace AK
                 static const AkUniqueID WALL = 2108779961U;
             } // namespace SWITCH
         } // namespace SHAPE
+
+        namespace SURFACE
+        {
+            static const AkUniqueID GROUP = 1834394558U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID STONE = 1216965916U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace SURFACE
 
     } // namespace SWITCHES
 

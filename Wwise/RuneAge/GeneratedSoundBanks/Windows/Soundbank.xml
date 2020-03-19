@@ -17,7 +17,7 @@
 					<IncludedMemoryFiles>
 						<File Id="513970753" Language="SFX">
 							<ShortName>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</ShortName>
-							<Path>SFX\Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600_AD84DBE7.wem</Path>
+							<Path>SFX\Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600_D2B05280.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -51,6 +51,234 @@
 							<Path>SFX\Spells\ArcaneThrow_55DA9E78.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2775932802" Name="character_footsteps" ObjectPath="\Events\Default Work Unit\Characters\character_footsteps" DurationType="OneShot" DurationMin="0.299530" DurationMax="1.155787">
+					<IncludedMemoryFiles>
+						<File Id="8096678" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_1885A72B.wem</Path>
+						</File>
+						<File Id="42009606" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_1D7C40D0.wem</Path>
+						</File>
+						<File Id="53805936" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_A23485BA.wem</Path>
+						</File>
+						<File Id="81482263" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_143B357E.wem</Path>
+						</File>
+						<File Id="98883571" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_7702E4B4.wem</Path>
+						</File>
+						<File Id="106289210" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_D9AAE52D.wem</Path>
+						</File>
+						<File Id="124612107" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_769EB0E0.wem</Path>
+						</File>
+						<File Id="129735945" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_ADC842A7.wem</Path>
+						</File>
+						<File Id="188547061" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_0AA59317.wem</Path>
+						</File>
+						<File Id="238865537" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_12935D5A.wem</Path>
+						</File>
+						<File Id="250229795" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_15AFC103.wem</Path>
+						</File>
+						<File Id="288090918" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_7B1E37BA.wem</Path>
+						</File>
+						<File Id="303962383" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_F1F784F9.wem</Path>
+						</File>
+						<File Id="330317749" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_FF9973A1.wem</Path>
+						</File>
+						<File Id="332529786" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_D61882A7.wem</Path>
+						</File>
+						<File Id="340781829" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_2990F7FE.wem</Path>
+						</File>
+						<File Id="378004621" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_525C6D92.wem</Path>
+						</File>
+						<File Id="386330056" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_D4718C69.wem</Path>
+						</File>
+						<File Id="390912400" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_8D55BBF5.wem</Path>
+						</File>
+						<File Id="402506703" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_7AC27B91.wem</Path>
+						</File>
+						<File Id="447221489" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_DC5268B0.wem</Path>
+						</File>
+						<File Id="453339544" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_4B60A71A.wem</Path>
+						</File>
+						<File Id="462798333" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_37911F81.wem</Path>
+						</File>
+						<File Id="464540296" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_AB69F46F.wem</Path>
+						</File>
+						<File Id="502026417" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_D6C727F6.wem</Path>
+						</File>
+						<File Id="504915974" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_A4BDF41B.wem</Path>
+						</File>
+						<File Id="519182725" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_66D193DA.wem</Path>
+						</File>
+						<File Id="547936877" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_48BB8B4E.wem</Path>
+						</File>
+						<File Id="590405115" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_063D23CC.wem</Path>
+						</File>
+						<File Id="618061754" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_B94A4487.wem</Path>
+						</File>
+						<File Id="650356041" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_013E3853.wem</Path>
+						</File>
+						<File Id="713692606" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_344A0153.wem</Path>
+						</File>
+						<File Id="799451720" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_B937A8D7.wem</Path>
+						</File>
+						<File Id="832531442" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_87DC3E06.wem</Path>
+						</File>
+						<File Id="904504963" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_33C9A454.wem</Path>
+						</File>
+						<File Id="936049965" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_C122809E.wem</Path>
+						</File>
+						<File Id="951893090" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_CB50294A.wem</Path>
+						</File>
+						<File Id="957119556" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_EBE11AD2.wem</Path>
+						</File>
+						<File Id="996720032" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_E55F4044.wem</Path>
+						</File>
+						<File Id="1005290682" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_DCA328C3.wem</Path>
+						</File>
+						<File Id="1043360531" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_1EFCF676.wem</Path>
+						</File>
+						<File Id="1061976737" Language="SFX">
+							<ShortName>Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD.wav</ShortName>
+							<Path>SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_66F580FA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C36E6DF-A64F-411A-9F1F-01AEF0F8E6E9}">
+							<Media>
+								<File Id="618061754"/>
+								<File Id="303962383"/>
+								<File Id="288090918"/>
+								<File Id="464540296"/>
+								<File Id="378004621"/>
+								<File Id="106289210"/>
+								<File Id="332529786"/>
+								<File Id="330317749"/>
+								<File Id="53805936"/>
+								<File Id="250229795"/>
+								<File Id="936049965"/>
+								<File Id="98883571"/>
+								<File Id="547936877"/>
+								<File Id="504915974"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{60880D7D-8637-4CC6-838C-F19C4685DB2C}">
+							<Media>
+								<File Id="996720032"/>
+								<File Id="390912400"/>
+								<File Id="799451720"/>
+								<File Id="462798333"/>
+								<File Id="1005290682"/>
+								<File Id="124612107"/>
+								<File Id="453339544"/>
+								<File Id="81482263"/>
+								<File Id="340781829"/>
+								<File Id="957119556"/>
+								<File Id="590405115"/>
+								<File Id="238865537"/>
+								<File Id="402506703"/>
+								<File Id="519182725"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{CF52C889-42B7-46D1-A9E7-928BA8E1AE2F}">
+							<Media>
+								<File Id="8096678"/>
+								<File Id="386330056"/>
+								<File Id="188547061"/>
+								<File Id="832531442"/>
+								<File Id="42009606"/>
+								<File Id="904504963"/>
+								<File Id="129735945"/>
+								<File Id="502026417"/>
+								<File Id="1043360531"/>
+								<File Id="951893090"/>
+								<File Id="447221489"/>
+								<File Id="650356041"/>
+								<File Id="713692606"/>
+								<File Id="1061976737"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="509606434" Name="fire_spell" ObjectPath="\Events\Default Work Unit\Spells\fire_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<SwitchContainers/>
@@ -103,6 +331,13 @@
 				</Event>
 			</IncludedEvents>
 			<SwitchGroups>
+				<SwitchGroup Id="1834394558" Name="Surface" ObjectPath="\Switches\Default Work Unit\Surface">
+					<Switches>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\Surface\Grass"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Surface\Stone"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Surface\Wood"/>
+					</Switches>
+				</SwitchGroup>
 				<SwitchGroup Id="3020443768" Name="Shape" ObjectPath="\Switches\Default Work Unit\Shape">
 					<Switches>
 						<Switch Id="3720716440" Name="Cone" ObjectPath="\Switches\Default Work Unit\Shape\Cone"/>

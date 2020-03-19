@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A3D79E67-C025-4D98-9E82-429434551CDC}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{A3D79E67-C025-4D98-9E82-429434551CDC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A3D79E67-C025-4D98-9E82-429434551CDC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Locomotion" ID="{AFCEA883-EF43-4D0A-B4A9-761B1C0841D2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="character_footsteps" ID="{82A21FCE-354F-4986-A6F8-1655C5D56A52}" WorkUnitID="{E333D936-36F1-4565-8E0A-B08320628937}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_area_fade_distance" ID="{B7D9D321-0FD5-45F3-96DE-E59D7F3A809D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{E8522259-4F1F-4B0C-A119-4791CC41B142}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Running" ID="{E4943CD2-971A-4ADD-9811-DA3DE4187E75}"/>
+						<CurrentSwitchRef Name="Grass" ID="{4C36E6DF-A64F-411A-9F1F-01AEF0F8E6E9}"/>
+						<CurrentSwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

@@ -18,6 +18,8 @@ namespace AK
         static const AkUniqueID ARCANE_SPELL = 2637742288U;
         static const AkUniqueID CAST_SPELL = 4080882651U;
         static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
+        static const AkUniqueID CHARACTER_JUMP = 118266349U;
+        static const AkUniqueID CHARACTER_LAND = 2984435986U;
         static const AkUniqueID FIRE_SPELL = 509606434U;
         static const AkUniqueID LIGHTNING_SPELL = 7154402U;
         static const AkUniqueID ROCK_SPELL = 3371098341U;
@@ -53,6 +55,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace LOCOMOTION
+        {
+            static const AkUniqueID GROUP = 556887514U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CROUCHING = 499013305U;
+                static const AkUniqueID RUNNING = 3863236874U;
+                static const AkUniqueID WALKING = 340271938U;
+            } // namespace SWITCH
+        } // namespace LOCOMOTION
+
         namespace SHAPE
         {
             static const AkUniqueID GROUP = 3020443768U;

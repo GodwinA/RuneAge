@@ -41,6 +41,13 @@
 						<Switch Name="Wood" ID="{CF52C889-42B7-46D1-A9E7-928BA8E1AE2F}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Locomotion" ID="{3EDDD84D-3F2A-4324-9B72-3390869E52D3}">
+					<ChildrenList>
+						<Switch Name="Running" ID="{E4943CD2-971A-4ADD-9811-DA3DE4187E75}"/>
+						<Switch Name="Walking" ID="{86527DDF-540F-4348-AC5D-E967436949C8}"/>
+						<Switch Name="Crouching" ID="{72BD6576-9AAE-4CC8-86F4-E322A61C7348}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

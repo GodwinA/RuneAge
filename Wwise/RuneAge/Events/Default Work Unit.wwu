@@ -5,12 +5,23 @@
 			<ChildrenList>
 				<Folder Name="Ambience" ID="{168CFCBB-258C-44E1-BA3B-84DC89E6CBF6}" ShortID="1032288463">
 					<ChildrenList>
-						<Event Name="ambience" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
+						<Event Name="ambience_outside" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
 							<ChildrenList>
 								<Action Name="" ID="{9D3A9F83-BE2B-4A77-A838-E0C04218D8B3}" ShortID="891890741">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ambience" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+											<ObjectRef Name="Ambience Outside" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ambience_inside" ID="{FE0C04E0-70A7-4BF9-AE77-C217C4BA5096}">
+							<ChildrenList>
+								<Action Name="" ID="{6350D8A9-FFB1-4A2C-A6BB-3B7BF5EAF71F}" ShortID="378690201">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience Inside" ID="{EEA3B0F7-E4C7-455E-AB4B-66090E6B5447}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -4,9 +4,22 @@
 		<WorkUnit Name="Default Work Unit" ID="{8785C5F3-0C70-4B0C-970A-A22CD4142E18}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="Shape" ID="{04F70DC9-DF85-4995-A38A-17FE572AC663}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{A7F2989C-5314-4387-ABEA-FA4A356BC981}"/>
 						<State Name="Sphere" ID="{7D8A28B9-68A0-4AF3-A141-A02F1BDDD1FC}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Location" ID="{3CCBFCA6-6910-408D-87CA-F98F2F352E54}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{E8522259-4F1F-4B0C-A119-4791CC41B142}"/>
+						<State Name="Inside" ID="{30859674-2AE4-4C6B-A366-4F9070710BE5}"/>
+						<State Name="Outside" ID="{57F7ED90-47A5-44D8-888B-FC1BABB3BA3B}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

@@ -27,7 +27,15 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="85412153" Name="ambience" ObjectPath="\Events\Default Work Unit\Ambience\ambience" DurationType="Infinite">
+				<Event Id="3695937480" Name="ambience_inside" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="513970753" Language="SFX">
+							<ShortName>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</ShortName>
+							<Path>SFX\Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600_AD84DBE7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3996256281" Name="ambience_outside" ObjectPath="\Events\Default Work Unit\Ambience\ambience_outside" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="578799138" Language="SFX">
 							<ShortName>Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218.wav</ShortName>
@@ -35,7 +43,92 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2637742288" Name="arcane_spell" ObjectPath="\Events\Default Work Unit\Spells\arcane_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="4.611068">
+					<IncludedMemoryFiles>
+						<File Id="755075785" Language="SFX">
+							<ShortName>Spells\ArcaneWoosh.wav</ShortName>
+							<Path>SFX\Spells\ArcaneWoosh_1C2C522F.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{930CE9A1-E423-44EC-9188-10B64A0F032B}">
+							<Media>
+								<File Id="755075785"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4080882651" Name="cast_spell" ObjectPath="\Events\Default Work Unit\Characters\cast_spell" DurationType="OneShot" DurationMin="2.372688" DurationMax="2.572688">
+					<IncludedMemoryFiles>
+						<File Id="125000402" Language="SFX">
+							<ShortName>Spells\ArcaneThrow.wav</ShortName>
+							<Path>SFX\Spells\ArcaneThrow_55DA9E78.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="509606434" Name="fire_spell" ObjectPath="\Events\Default Work Unit\Spells\fire_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<SwitchContainers/>
+				</Event>
+				<Event Id="7154402" Name="lightning_spell" ObjectPath="\Events\Default Work Unit\Spells\lightning_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<SwitchContainers/>
+				</Event>
+				<Event Id="3371098341" Name="rock_spell" ObjectPath="\Events\Default Work Unit\Spells\rock_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="2.275162">
+					<IncludedMemoryFiles>
+						<File Id="12501531" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_AA92D7BF.wem</Path>
+						</File>
+						<File Id="73586014" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_320F51B8.wem</Path>
+						</File>
+						<File Id="308439537" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_4B047ABC.wem</Path>
+						</File>
+						<File Id="324670870" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_7A1B0FC8.wem</Path>
+						</File>
+						<File Id="773752658" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_29B067DC.wem</Path>
+						</File>
+						<File Id="1057281826" Language="SFX">
+							<ShortName>Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6.wav</ShortName>
+							<Path>SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_333D9AD6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{930CE9A1-E423-44EC-9188-10B64A0F032B}">
+							<Media>
+								<File Id="73586014"/>
+								<File Id="12501531"/>
+								<File Id="324670870"/>
+								<File Id="308439537"/>
+								<File Id="1057281826"/>
+								<File Id="773752658"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3672226213" Name="water_spell" ObjectPath="\Events\Default Work Unit\Spells\water_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<SwitchContainers/>
+				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="3020443768" Name="Shape" ObjectPath="\Switches\Default Work Unit\Shape">
+					<Switches>
+						<Switch Id="3720716440" Name="Cone" ObjectPath="\Switches\Default Work Unit\Shape\Cone"/>
+						<Switch Id="2582515549" Name="Pillar" ObjectPath="\Switches\Default Work Unit\Shape\Pillar"/>
+						<Switch Id="2598345275" Name="Ring" ObjectPath="\Switches\Default Work Unit\Shape\Ring"/>
+						<Switch Id="1161967626" Name="Shield" ObjectPath="\Switches\Default Work Unit\Shape\Shield"/>
+						<Switch Id="3478592334" Name="Sphere" ObjectPath="\Switches\Default Work Unit\Shape\Sphere"/>
+						<Switch Id="2586554088" Name="Tornado" ObjectPath="\Switches\Default Work Unit\Shape\Tornado"/>
+						<Switch Id="2108779961" Name="Wall" ObjectPath="\Switches\Default Work Unit\Shape\Wall"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -20,13 +20,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="Ambience" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" ShortID="431758979">
+						<BlendContainer Name="Ambience Outside" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" ShortID="431758979">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+									<ObjectRef Name="Ambience_Outside" ID="{613B0008-42B3-4AD3-BF62-5817CA1BAE87}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -137,6 +140,11 @@
 												<Property Name="LoopBegin" Type="Real64" Value="2.20776750330251"/>
 												<Property Name="LoopEnd" Type="Real64" Value="126.182404227213"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Ambience\Ambience, Forest, Calm, No Birds, Winter, Airy SND5218.wav</AudioFile>
@@ -147,6 +155,63 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Ambience, Forest, Calm, No Birds, Winter, Airy SND5218" ID="{20506DB8-41DC-4502-9B2C-51DC4A89C732}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Ambience Inside" ID="{EEA3B0F7-E4C7-455E-AB4B-66090E6B5447}" ShortID="545755745">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="AmbienceAtt" ID="{F8A58747-11D9-4B86-8670-8C1896F4AC4A}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ambience_Inside" ID="{0B331508-89A4-41BB-9989-962A6074A765}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{606A67ED-C84B-4905-89D4-D827BF033F73}" ShortID="885510464">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}">
+											<Comment> </Comment>
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.63185160722149"/>
+												<Property Name="LoopEnd" Type="Real64" Value="75.0651739321885"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="513970753"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

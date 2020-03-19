@@ -11,7 +11,52 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}"/>
-						<Bus Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}"/>
+						<Bus Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}">
+							<ChildrenList>
+								<Bus Name="Ambience_Inside" ID="{0B331508-89A4-41BB-9989-962A6074A765}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Location" ID="{3CCBFCA6-6910-408D-87CA-F98F2F352E54}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Outside" ID="{57F7ED90-47A5-44D8-888B-FC1BABB3BA3B}"/>
+												<CustomState Name="" ID="{1CD00E0A-B24E-4848-BCB9-701CDD28156A}" ShortID="843778083"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Inside" ID="{30859674-2AE4-4C6B-A366-4F9070710BE5}"/>
+												<CustomState Name="" ID="{0E064759-2C68-4875-BE25-73CCF0644E72}" ShortID="193044230"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="Ambience_Outside" ID="{613B0008-42B3-4AD3-BF62-5817CA1BAE87}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Location" ID="{3CCBFCA6-6910-408D-87CA-F98F2F352E54}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Outside" ID="{57F7ED90-47A5-44D8-888B-FC1BABB3BA3B}"/>
+												<CustomState Name="" ID="{1422DE47-4990-4F08-A3AE-24F8221950F5}" ShortID="149856755"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Inside" ID="{30859674-2AE4-4C6B-A366-4F9070710BE5}"/>
+												<CustomState Name="" ID="{D57A9EE4-EA97-48F1-9160-35627F99F5F5}" ShortID="178705924">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="68"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}"/>
 						<AuxBus Name="Reverb" ID="{B271A05A-EAB9-4DC0-941F-0935612B16A8}">
 							<ChildrenList>

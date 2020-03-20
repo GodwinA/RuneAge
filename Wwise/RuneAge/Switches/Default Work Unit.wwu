@@ -34,20 +34,6 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
-				<SwitchGroup Name="Surface" ID="{044A141B-78FD-47BE-878B-5B2609823C80}">
-					<ChildrenList>
-						<Switch Name="Grass" ID="{4C36E6DF-A64F-411A-9F1F-01AEF0F8E6E9}"/>
-						<Switch Name="Stone" ID="{60880D7D-8637-4CC6-838C-F19C4685DB2C}"/>
-						<Switch Name="Wood" ID="{CF52C889-42B7-46D1-A9E7-928BA8E1AE2F}"/>
-					</ChildrenList>
-				</SwitchGroup>
-				<SwitchGroup Name="Locomotion" ID="{3EDDD84D-3F2A-4324-9B72-3390869E52D3}">
-					<ChildrenList>
-						<Switch Name="Running" ID="{E4943CD2-971A-4ADD-9811-DA3DE4187E75}"/>
-						<Switch Name="Walking" ID="{86527DDF-540F-4348-AC5D-E967436949C8}"/>
-						<Switch Name="Crouching" ID="{72BD6576-9AAE-4CC8-86F4-E322A61C7348}"/>
-					</ChildrenList>
-				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

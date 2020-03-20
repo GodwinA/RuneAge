@@ -237,7 +237,6 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>1000</XPos>
@@ -265,7 +264,6 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>1000</XPos>
@@ -325,7 +323,7 @@
 				</Attenuation>
 				<Attenuation Name="CharacterAtt" ID="{206B3E64-25D5-44E2-97A6-74EEA7BABEBA}" ShortID="247233395">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+						<Property Name="RadiusMax" Type="Real64" Value="1000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -339,10 +337,9 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1500</XPos>
+											<XPos>1000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -367,10 +364,9 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>1500</XPos>
+											<XPos>1000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -394,7 +390,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1500</XPos>
+											<XPos>1000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -415,7 +411,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1500</XPos>
+											<XPos>1000</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

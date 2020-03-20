@@ -5,12 +5,23 @@
 			<ChildrenList>
 				<Folder Name="Ambience" ID="{168CFCBB-258C-44E1-BA3B-84DC89E6CBF6}" ShortID="1032288463">
 					<ChildrenList>
-						<Event Name="ambience" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
+						<Event Name="ambience_outside" ID="{7B9A212C-8872-4695-932E-465726B679B0}">
 							<ChildrenList>
 								<Action Name="" ID="{9D3A9F83-BE2B-4A77-A838-E0C04218D8B3}" ShortID="891890741">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ambience" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+											<ObjectRef Name="Ambience Outside" ID="{6A02B43D-20D1-4EA2-8CC5-CB7236851FBA}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ambience_inside" ID="{FE0C04E0-70A7-4BF9-AE77-C217C4BA5096}">
+							<ChildrenList>
+								<Action Name="" ID="{6350D8A9-FFB1-4A2C-A6BB-3B7BF5EAF71F}" ShortID="378690201">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambience Inside" ID="{EEA3B0F7-E4C7-455E-AB4B-66090E6B5447}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -26,6 +37,72 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Cast Spell" ID="{1E9E2D86-F6E8-4195-862D-7F50CE0A19BD}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_footsteps" ID="{82A21FCE-354F-4986-A6F8-1655C5D56A52}">
+							<ChildrenList>
+								<Action Name="" ID="{DE98987B-94FC-407A-8845-F8F6F3565E7C}" ShortID="793607416">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{A69162D8-4394-4BB7-92C1-610E8D6D66B4}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0DEC5661-9A32-409C-AF3C-6EEB99057DB8}" ShortID="389496423">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{A69162D8-4394-4BB7-92C1-610E8D6D66B4}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_jump" ID="{EDB528DF-5464-497A-83A0-37062280D3CF}">
+							<ChildrenList>
+								<Action Name="" ID="{12DC0578-4401-4D33-8820-0D1CC7D07379}" ShortID="382307616">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{498554FD-AE92-4BA1-BF00-BD90175B7A82}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5862AC4D-42A9-4E05-AC9B-F06213948ABA}" ShortID="632171476">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{498554FD-AE92-4BA1-BF00-BD90175B7A82}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_land" ID="{4806F836-8E65-492B-980B-317FAFF76BD8}">
+							<ChildrenList>
+								<Action Name="" ID="{2DC12CD8-4FAF-4591-9931-822ADD345384}" ShortID="82473458">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{9CCEF58F-C298-40BB-A9DC-E67D2BC4914C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{021A4123-A2E1-4437-A966-DAAE0B5DC099}" ShortID="419110205">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{9CCEF58F-C298-40BB-A9DC-E67D2BC4914C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

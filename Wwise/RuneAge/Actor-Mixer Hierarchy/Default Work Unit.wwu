@@ -325,6 +325,7 @@
 						</BlendContainer>
 						<BlendContainer Name="Locomotion" ID="{8E632688-7E55-4726-BC63-B964CF00A8DF}" ShortID="518688153">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>

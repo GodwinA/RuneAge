@@ -24,7 +24,7 @@
 						<CurrentStateRef Name="None" ID="{E8522259-4F1F-4B0C-A119-4791CC41B142}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Running" ID="{E4943CD2-971A-4ADD-9811-DA3DE4187E75}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{72BD6576-9AAE-4CC8-86F4-E322A61C7348}"/>
 						<CurrentSwitchRef Name="Grass" ID="{4C36E6DF-A64F-411A-9F1F-01AEF0F8E6E9}"/>
 						<CurrentSwitchRef Name="Cone" ID="{32387F0A-E5AD-4490-90A4-7427A61AE96C}"/>
 					</CurrentSwitchList>

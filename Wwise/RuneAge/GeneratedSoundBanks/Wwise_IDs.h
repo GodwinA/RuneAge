@@ -13,13 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMBIENCE_INSIDE = 3695937480U;
-        static const AkUniqueID AMBIENCE_OUTSIDE = 3996256281U;
+        static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID ARCANE_SPELL = 2637742288U;
         static const AkUniqueID CAST_SPELL = 4080882651U;
-        static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
-        static const AkUniqueID CHARACTER_JUMP = 118266349U;
-        static const AkUniqueID CHARACTER_LAND = 2984435986U;
         static const AkUniqueID FIRE_SPELL = 509606434U;
         static const AkUniqueID LIGHTNING_SPELL = 7154402U;
         static const AkUniqueID ROCK_SPELL = 3371098341U;
@@ -28,18 +24,6 @@ namespace AK
 
     namespace STATES
     {
-        namespace LOCATION
-        {
-            static const AkUniqueID GROUP = 1176052424U;
-
-            namespace STATE
-            {
-                static const AkUniqueID INSIDE = 3553349781U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OUTSIDE = 438105790U;
-            } // namespace STATE
-        } // namespace LOCATION
-
         namespace SHAPE
         {
             static const AkUniqueID GROUP = 3020443768U;
@@ -55,18 +39,6 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace LOCOMOTION
-        {
-            static const AkUniqueID GROUP = 556887514U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID CROUCHING = 499013305U;
-                static const AkUniqueID RUNNING = 3863236874U;
-                static const AkUniqueID WALKING = 340271938U;
-            } // namespace SWITCH
-        } // namespace LOCOMOTION
-
         namespace SHAPE
         {
             static const AkUniqueID GROUP = 3020443768U;
@@ -82,18 +54,6 @@ namespace AK
                 static const AkUniqueID WALL = 2108779961U;
             } // namespace SWITCH
         } // namespace SHAPE
-
-        namespace SURFACE
-        {
-            static const AkUniqueID GROUP = 1834394558U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID STONE = 1216965916U;
-                static const AkUniqueID WOOD = 2058049674U;
-            } // namespace SWITCH
-        } // namespace SURFACE
 
     } // namespace SWITCHES
 
@@ -112,8 +72,6 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID AMBIENCE_INSIDE = 3695937480U;
-        static const AkUniqueID AMBIENCE_OUTSIDE = 3996256281U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;

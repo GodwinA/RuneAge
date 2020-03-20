@@ -11,26 +11,17 @@ Switch	ID	Name	Switch Group			Notes
 	3720716440	Cone	Shape			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	1176052424	Location			\Default Work Unit\Location	
 	3020443768	Shape			\Default Work Unit\Shape	
 
 State	ID	Name	State Group			Notes
-	438105790	Outside	Location			
-	748895195	None	Location			
-	3553349781	Inside	Location			
 	748895195	None	Shape			
 	3478592334	Sphere	Shape			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	178705924	Inside	Location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience\Ambience_Outside		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
-	3695937480	Ambience_Inside			\Default Work Unit\Master Audio Bus\Ambience\Ambience_Inside	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
-	3996256281	Ambience_Outside			\Default Work Unit\Master Audio Bus\Ambience\Ambience_Outside	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	

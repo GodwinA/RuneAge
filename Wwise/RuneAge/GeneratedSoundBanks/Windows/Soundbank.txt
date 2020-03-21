@@ -2,18 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	7154402	lightning_spell			\Default Work Unit\Spells\lightning_spell	
 	118266349	character_jump			\Default Work Unit\Characters\character_jump	
 	509606434	fire_spell			\Default Work Unit\Spells\fire_spell	
-	1414116942	character_low_health			\Default Work Unit\Characters\character_low_health	
-	1476656008	ambience_inside_cave			\Default Work Unit\Ambience\ambience_inside_cave	
-	2032244766	ambience_inside_room			\Default Work Unit\Ambience\ambience_inside_room	
 	2637742288	arcane_spell			\Default Work Unit\Spells\arcane_spell	
 	2775932802	character_footsteps			\Default Work Unit\Characters\character_footsteps	
 	2984435986	character_land			\Default Work Unit\Characters\character_land	
-	2990357609	character_die			\Default Work Unit\Characters\character_die	
-	3148586457	character_kill			\Default Work Unit\Characters\character_kill	
 	3371098341	rock_spell			\Default Work Unit\Spells\rock_spell	
 	3672226213	water_spell			\Default Work Unit\Spells\water_spell	
+	3695937480	ambience_inside			\Default Work Unit\Ambience\ambience_inside	
 	3996256281	ambience_outside			\Default Work Unit\Ambience\ambience_outside	
-	4231402215	character_cast_spell			\Default Work Unit\Characters\character_cast_spell	
+	4080882651	cast_spell			\Default Work Unit\Characters\cast_spell	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	556887514	Locomotion			\Default Work Unit\Locomotion	
@@ -35,9 +31,6 @@ Switch	ID	Name	Switch Group			Notes
 	3478592334	Sphere	Shape			
 	3720716440	Cone	Shape			
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	2760765373	rtpc_player_health			\Default Work Unit\rtpc_player_health	
-
 Modulator Time	ID	Name			Wwise Object Path	Notes
 	962167441	Modulator Time (Custom)				
 
@@ -55,7 +48,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	125000402	ArcaneThrow	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Spells\ArcaneThrow_55DA9E78.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Cast Spell\ArcaneThrow		14184
 	127586044	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_JUMPING_01	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_JUMPING_D1E15F16.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Jump\Jumping\Grass\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_JUMPING_01		4285
 	129735945	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_06	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_962A317C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Toe\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_06		3576
-	149244491	Water, Drips, Reverberant Echo, Cave, Cavern SND35163	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163_B8A800CD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience Inside\Cave\Water, Drips, Reverberant Echo, Cave, Cavern SND35163		811002
 	188547061	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_02	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_42855DBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Toe\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_02		3419
 	231985815	FOOTSTEPS_STONES_DRESS-SHOES_JUMPING	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING_B174FBDD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Land\Landing\Stone\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING		3915
 	238865537	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_04	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_12935D5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Toe\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_04		5726
@@ -71,13 +63,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	330317749	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_E4F3A306.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Toe\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD		6026
 	332529786	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_06	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_FB03650E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Heel\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_06		3015
 	339227047	FOOTSTEPS_STONES_DRESS-SHOES_JUMPING_03	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING_BE0F43E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Land\Landing\Stone\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING_03		4092
-	339376474	Krotos UI Tech Notification Noise Whoosh Mono	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Spells\Krotos UI Tech Notification Noise Whoosh Mono_11DEC84A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Kill\Krotos UI Tech Notification Noise Whoosh Mono		2461
 	340781829	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_01	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_2990F7FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Toe\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_01		5964
 	378004621	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_04	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_925E581D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Heel\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_04		2971
 	386330056	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_01	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_E9CB0E82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Toe\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_01		3290
 	390912400	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_01	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_8D55BBF5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Heel\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_01		2825
 	402506703	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_05	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_7AC27B91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Toe\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_05		6888
-	411141061	Heartbeat, 45 Beats Per Minute SND13600 1	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Heartbeat, 45 Beats Per Minute SND13600 1_05AC0351.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Low Health\Heartbeat, 45 Beats Per Minute SND13600 1		41839
 	414537927	FOOTSTEPS_SOLID-WOOD_SOCKS_JUMPING_02	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_JUMPING_5494681B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Jump\Jumping\Wood\FOOTSTEPS_SOLID-WOOD_SOCKS_JUMPING_02		3181
 	447221489	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_04	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_8BDC301E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Heel\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_04		3370
 	453339544	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_06	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_4B60A71A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Heel\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_06		3386
@@ -85,7 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	464540296	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_03	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_585E4878.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Heel\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_03		3845
 	502026417	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_01	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_14EA0B9D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Heel\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_01		3915
 	504915974	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_06	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_CFA0DAAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Toe\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_06		4642
-	513970753	Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600_D2B05280.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience Inside\Room\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600		1081536
+	513970753	Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600_D2B05280.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Ambience Inside\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600		1081536
 	519182725	FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_06	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_66D193DA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Stone\Toe\FOOTSTEPS_STONES_DRESS-SHOES_STANDARD_06		4645
 	538483163	FOOTSTEPS_STONES_DRESS-SHOES_JUMPING	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING_8C5E6B64.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Jump\Jumping\Stone\FOOTSTEPS_STONES_DRESS-SHOES_JUMPING		4585
 	547936877	FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_05	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_5BF960FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Grass\Toe\FOOTSTEPS_EARTH-LEAFY_HIKING-BOOTS_STANDARD_05		4579
@@ -127,5 +117,4 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1043360531	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_02	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_4D397E5D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Heel\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_02		2840
 	1057281826	Earthquake, Rumble, Rocks In Motion 01 SND13403 6_04	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Spells\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_333D9AD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Spells\Rock\Shape\Sphere\RockSphere\Earthquake, Rumble, Rocks In Motion 01 SND13403 6_04		14168
 	1061976737	FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_07	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Locomotion\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_BB6F1AA0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Locomotion\Footsteps\Footsteps\Walking\Wood\Heel\FOOTSTEPS_SOLID-WOOD_SOCKS_STANDARD_07		3340
-	1070648722	Heartbeat, 101 Beats Per Minute SND13596	F:\Git\GitHub\RuneAge\Wwise\RuneAge\.cache\Windows\SFX\Character\Heartbeat, 101 Beats Per Minute SND13596_823B0723.wem		\Actor-Mixer Hierarchy\Default Work Unit\Characters\Low Health\Heartbeat, 101 Beats Per Minute SND13596		28714
 

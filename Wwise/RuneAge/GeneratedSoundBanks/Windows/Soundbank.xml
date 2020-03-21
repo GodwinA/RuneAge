@@ -13,7 +13,15 @@
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3695937480" Name="ambience_inside" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside" DurationType="Infinite">
+				<Event Id="1476656008" Name="ambience_inside_cave" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside_cave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="149244491" Language="SFX">
+							<ShortName>Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163.wav</ShortName>
+							<Path>SFX\Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163_D6E72B2B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2032244766" Name="ambience_inside_room" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside_room" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="513970753" Language="SFX">
 							<ShortName>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</ShortName>

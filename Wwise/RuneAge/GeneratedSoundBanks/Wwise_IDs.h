@@ -13,7 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMBIENCE_INSIDE = 3695937480U;
+        static const AkUniqueID AMBIENCE_INSIDE_CAVE = 1476656008U;
+        static const AkUniqueID AMBIENCE_INSIDE_ROOM = 2032244766U;
         static const AkUniqueID AMBIENCE_OUTSIDE = 3996256281U;
         static const AkUniqueID ARCANE_SPELL = 2637742288U;
         static const AkUniqueID CAST_SPELL = 4080882651U;
@@ -99,8 +100,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID INTENSITY = 2470328564U;
         static const AkUniqueID RTPC_AREA_FADE_DISTANCE = 1799335409U;
+        static const AkUniqueID RTPC_INTENSITY = 2582146478U;
+        static const AkUniqueID RTPC_MASTER_VOLUME = 2564988978U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

@@ -12,16 +12,20 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="rtpc_master_volume" ID="{8E8FF115-3503-4533-AA40-D832CCF6F654}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="rtpc_area_fade_distance" ID="{B7D9D321-0FD5-45F3-96DE-E59D7F3A809D}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
-							<Value>50</Value>
+							<GameParameterRef Name="rtpc_intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{E8522259-4F1F-4B0C-A119-4791CC41B142}"/>
+						<CurrentStateRef Name="Inside" ID="{30859674-2AE4-4C6B-A366-4F9070710BE5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Crouching" ID="{72BD6576-9AAE-4CC8-86F4-E322A61C7348}"/>

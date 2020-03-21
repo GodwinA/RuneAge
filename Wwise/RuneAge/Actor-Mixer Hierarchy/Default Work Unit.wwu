@@ -62,7 +62,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -177,10 +177,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{606A67ED-C84B-4905-89D4-D827BF033F73}" ShortID="885510464">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
+								<BlendContainer Name="Room" ID="{127E79DD-0B5D-46E0-B1F6-39B6CE07F3A0}" ShortID="934620070">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
@@ -190,29 +187,148 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}">
+										<Sound Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{606A67ED-C84B-4905-89D4-D827BF033F73}" ShortID="885510464">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
-												<Property Name="LoopBegin" Type="Real64" Value="1.63185160722149"/>
-												<Property Name="LoopEnd" Type="Real64" Value="75.0651739321885"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="VolumeOffset" Type="Real64">
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>9</Value>
+														<Value>6</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D9FF00B8-2BC7-472E-A4B5-17C0EBEFF82F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="513970753"/>
-											</MediaIDList>
-										</AudioFileSource>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="AmbienceAtt" ID="{F8A58747-11D9-4B86-8670-8C1896F4AC4A}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambience_Inside" ID="{0B331508-89A4-41BB-9989-962A6074A765}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="100"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.63185160722149"/>
+														<Property Name="LoopEnd" Type="Real64" Value="75.0651739321885"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="513970753"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600" ID="{ADBDBF13-31CB-4D10-A87A-A3BB7F8EEC15}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
+								<BlendContainer Name="Cave" ID="{9513D2D7-4D0B-4724-8B44-CC9D30B2F20C}" ShortID="616714346">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Water, Drips, Reverberant Echo, Cave, Cavern SND35163" ID="{6425B928-887F-4ECE-AC6C-F1C6DE2E3A9D}" ShortID="440485780">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E9AB50CB-8B4F-43D7-9D89-1C5E282744E0}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A97E6649-82DC-48F2-9CD8-A2103C2DE87C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="AmbienceAtt" ID="{F8A58747-11D9-4B86-8670-8C1896F4AC4A}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ambience_Inside" ID="{0B331508-89A4-41BB-9989-962A6074A765}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Water, Drips, Reverberant Echo, Cave, Cavern SND35163" ID="{500CD3DA-C60E-4BF3-9B32-89918946117C}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.954408190224576"/>
+														<Property Name="LoopBegin" Type="Real64" Value="4.41413787978863"/>
+														<Property Name="LoopEnd" Type="Real64" Value="42.5861537378427"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>-16</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="149244491"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Water, Drips, Reverberant Echo, Cave, Cavern SND35163" ID="{500CD3DA-C60E-4BF3-9B32-89918946117C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
@@ -4644,12 +4760,18 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Jump" ID="{498554FD-AE92-4BA1-BF00-BD90175B7A82}" ShortID="163739529">
+									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="LargeReverb" ID="{188A1010-DD3B-4710-9FCB-FA498074FBF8}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>

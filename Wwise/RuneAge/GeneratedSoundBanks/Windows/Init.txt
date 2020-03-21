@@ -24,9 +24,6 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	178705924	Inside	Location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience\Ambience_Outside		
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	2564988978	rtpc_master_volume			\Default Work Unit\rtpc_master_volume	
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
@@ -42,9 +39,9 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3684725634	LargeReverb			\Default Work Unit\Master Audio Bus\Reverb\LargeReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
-	602546716	Room_Large	Wwise RoomVerb			
 	1990128658	Room_Medium	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
+	3164629247	Holy	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

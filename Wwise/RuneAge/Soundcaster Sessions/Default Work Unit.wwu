@@ -12,12 +12,20 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}"/>
+							<Value>17.6767676767677</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_master_volume" ID="{8E8FF115-3503-4533-AA40-D832CCF6F654}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="rtpc_area_fade_distance" ID="{B7D9D321-0FD5-45F3-96DE-E59D7F3A809D}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
-							<Value>50</Value>
+							<GameParameterRef Name="rtpc_intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

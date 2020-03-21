@@ -16,12 +16,23 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="ambience_inside" ID="{FE0C04E0-70A7-4BF9-AE77-C217C4BA5096}">
+						<Event Name="ambience_inside_room" ID="{FE0C04E0-70A7-4BF9-AE77-C217C4BA5096}">
 							<ChildrenList>
 								<Action Name="" ID="{6350D8A9-FFB1-4A2C-A6BB-3B7BF5EAF71F}" ShortID="378690201">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ambience Inside" ID="{EEA3B0F7-E4C7-455E-AB4B-66090E6B5447}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+											<ObjectRef Name="Room" ID="{127E79DD-0B5D-46E0-B1F6-39B6CE07F3A0}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ambience_inside_cave" ID="{3BF07227-2CF5-40CE-879B-6E3706CD475B}">
+							<ChildrenList>
+								<Action Name="" ID="{21FADAAD-F31E-4DF6-9AD1-EDE982C51E5B}" ShortID="487058727">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cave" ID="{9513D2D7-4D0B-4724-8B44-CC9D30B2F20C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -31,7 +42,7 @@
 				</Folder>
 				<Folder Name="Characters" ID="{34E3EC62-B40C-473B-A6E2-2A36615EA42D}" ShortID="303333414">
 					<ChildrenList>
-						<Event Name="cast_spell" ID="{E70ABF67-958C-4233-BA4E-BADB5D3840F4}">
+						<Event Name="character_cast_spell" ID="{E70ABF67-958C-4233-BA4E-BADB5D3840F4}">
 							<ChildrenList>
 								<Action Name="" ID="{775032D5-A783-4FB4-BCA7-3B1359FAB0A7}" ShortID="265214486">
 									<ReferenceList>
@@ -103,6 +114,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Land" ID="{9CCEF58F-C298-40BB-A9DC-E67D2BC4914C}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_kill" ID="{EFE3B230-2BC8-46B6-838C-1AFC2BBE8145}">
+							<ChildrenList>
+								<Action Name="" ID="{941DC7C9-B1CD-46EB-BC82-937D29ED2103}" ShortID="873310967">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Kill" ID="{43865AF6-5309-4F4D-B410-781BDFCA099B}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_die" ID="{05B9AD21-8141-4919-B49F-36AD6DF79730}">
+							<ChildrenList>
+								<Action Name="" ID="{BA4BD5BC-5314-4A87-8A7E-2266CF80705A}" ShortID="624323485">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Die" ID="{10ECAE85-21B9-42AD-9431-97B4879C1A1D}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="character_low_health" ID="{877FE903-4E23-4B13-A223-5AE634B368BB}">
+							<ChildrenList>
+								<Action Name="" ID="{FC8E3031-CC69-461D-B3B4-C004BB4F51EB}" ShortID="973740768">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Low Health" ID="{995A21F9-DC31-443C-9671-ADC8FE6E9006}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

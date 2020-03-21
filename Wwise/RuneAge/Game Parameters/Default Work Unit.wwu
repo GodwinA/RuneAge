@@ -3,11 +3,25 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+				<GameParameter Name="rtpc_intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 				<GameParameter Name="rtpc_area_fade_distance" ID="{B7D9D321-0FD5-45F3-96DE-E59D7F3A809D}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rtpc_master_volume" ID="{8E8FF115-3503-4533-AA40-D832CCF6F654}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

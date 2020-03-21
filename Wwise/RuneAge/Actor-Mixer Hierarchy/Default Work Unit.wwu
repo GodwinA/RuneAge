@@ -6323,6 +6323,405 @@
 								</BlendContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<BlendContainer Name="Kill" ID="{43865AF6-5309-4F4D-B410-781BDFCA099B}" ShortID="1041792024">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Krotos UI Tech Notification Noise Whoosh Mono" ID="{6DF51E4C-5A24-4C66-B287-26AB7E5CBD9C}" ShortID="959071948">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Krotos UI Tech Notification Noise Whoosh Mono" ID="{3D386D3E-AEFA-4981-A038-A4A2956E6316}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.071003963011889"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0455746367239102"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.047225891677675"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Spells\Krotos UI Tech Notification Noise Whoosh Mono.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="339376474"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Krotos UI Tech Notification Noise Whoosh Mono" ID="{3D386D3E-AEFA-4981-A038-A4A2956E6316}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Die" ID="{10ECAE85-21B9-42AD-9431-97B4879C1A1D}" ShortID="948651025">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+						</BlendContainer>
+						<BlendContainer Name="Low Health" ID="{995A21F9-DC31-443C-9671-ADC8FE6E9006}" ShortID="905048625">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Heartbeat, 101 Beats Per Minute SND13596" ID="{1FDF7275-088F-4AF2-A9A2-9999D36D8FED}" ShortID="407324932">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="CharacterAtt" ID="{206B3E64-25D5-44E2-97A6-74EEA7BABEBA}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Heartbeat, 101 Beats Per Minute SND13596" ID="{D22E5842-4067-488D-B8C4-43630D89011E}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="75"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0197376155878468"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.013158410391898"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.042764833773668"/>
+												<Property Name="LoopEnd" Type="Real64" Value="2.4343059225011"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Heartbeat, 101 Beats Per Minute SND13596.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1070648722"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Heartbeat, 101 Beats Per Minute SND13596" ID="{D22E5842-4067-488D-B8C4-43630D89011E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Heartbeat, 45 Beats Per Minute SND13600 1" ID="{C657E534-639C-4E88-BB93-7E6F3F381CC8}" ShortID="211130022">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="CharacterAtt" ID="{206B3E64-25D5-44E2-97A6-74EEA7BABEBA}" WorkUnitID="{D8836745-2130-445B-9FD9-FBBFD016536A}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{30C838FC-3FB8-4DCE-8A22-657066ECCD4F}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}" WorkUnitID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Heartbeat, 45 Beats Per Minute SND13600 1" ID="{B9F106A3-2E7D-4AF7-9979-55C4D32F61ED}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="75"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.004531631650363"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0132358404887714"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0475804692036608"/>
+												<Property Name="LoopEnd" Type="Real64" Value="2.28538845772787"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Character\Heartbeat, 45 Beats Per Minute SND13600 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="411141061"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Heartbeat, 45 Beats Per Minute SND13600 1" ID="{B9F106A3-2E7D-4AF7-9979-55C4D32F61ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="LowHealth" ID="{9FDA7DED-AB5F-4CC5-9929-18B057601405}" ShortID="82369386">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{48568AF6-3BF4-4F17-B915-91FAD2D8CFCC}" ShortID="1013354822">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{94C90AB1-AEDD-4AED-AED8-21CAA9FA1FCA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>-100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{D5F338AA-541C-49C5-9D7F-CAE1EEFFD68F}" ShortID="1058341970">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5C54FB0A-3F4C-4F3D-8E2F-E2B02EA6BB5B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>1000</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>1000</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{7A0EE9D2-6246-4474-8561-512427ED55B5}" ShortID="880680927">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{3CA0C9B7-3787-46A7-B5EC-097E7ABA394C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-182.69662</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>9.999</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10.1</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>30</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>35</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Constant</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Heartbeat, 45 Beats Per Minute SND13600 1" ID="{C657E534-639C-4E88-BB93-7E6F3F381CC8}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+								<BlendTrack Name="CriticalHealth" ID="{CFBAD296-4D1A-4108-B3F0-D621684CBD4F}" ShortID="229878099">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{9F5C0162-770B-402D-A419-8F6664BC4CD0}" ShortID="125921125">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9C3A8FB6-6260-4182-BFBE-78287A68B4CB}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10.001</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{1749D5C1-E2DE-42CC-852B-F8B906849F9F}" ShortID="33128763">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C634FEC0-AC66-4502-867F-6D3F5AD6330B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10.1</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="Heartbeat, 101 Beats Per Minute SND13596" ID="{1FDF7275-088F-4AF2-A9A2-9999D36D8FED}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Spells" ID="{150DDFE2-A08D-48BB-8B43-990F36BE2D74}" ShortID="459165803">

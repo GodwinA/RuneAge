@@ -21,13 +21,24 @@
 				<AuxBus Id="2134960294" Name="SmallReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\SmallReverb"/>
 				<AuxBus Id="3684725634" Name="LargeReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\LargeReverb"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="2564988978" Name="rtpc_master_volume" ObjectPath="\Game Parameters\Default Work Unit\rtpc_master_volume"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1661994096" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3695937480" Name="ambience_inside" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside" DurationType="Infinite">
+				<Event Id="1476656008" Name="ambience_inside_cave" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside_cave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="149244491" Language="SFX">
+							<ShortName>Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163.wav</ShortName>
+							<Path>SFX\Ambience\Water, Drips, Reverberant Echo, Cave, Cavern SND35163_B8A800CD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2032244766" Name="ambience_inside_room" ObjectPath="\Events\Default Work Unit\Ambience\ambience_inside_room" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="513970753" Language="SFX">
 							<ShortName>Ambience\Cfx 20130329 Uk Dorset Room Tone01 by Carlvus Id-182600.wav</ShortName>
@@ -58,7 +69,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4080882651" Name="cast_spell" ObjectPath="\Events\Default Work Unit\Characters\cast_spell" DurationType="OneShot" DurationMin="2.372688" DurationMax="2.572688">
+				<Event Id="4231402215" Name="character_cast_spell" ObjectPath="\Events\Default Work Unit\Characters\character_cast_spell" DurationType="OneShot" DurationMin="2.372688" DurationMax="2.572688">
 					<IncludedMemoryFiles>
 						<File Id="125000402" Language="SFX">
 							<ShortName>Spells\ArcaneThrow.wav</ShortName>
@@ -66,6 +77,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2990357609" Name="character_die" ObjectPath="\Events\Default Work Unit\Characters\character_die" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2775932802" Name="character_footsteps" ObjectPath="\Events\Default Work Unit\Characters\character_footsteps" DurationType="OneShot" DurationMin="0.299530" DurationMax="1.229689">
 					<IncludedMemoryFiles>
 						<File Id="8096678" Language="SFX">
@@ -449,6 +461,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3148586457" Name="character_kill" ObjectPath="\Events\Default Work Unit\Characters\character_kill" DurationType="OneShot" DurationMin="0.202774" DurationMax="0.202774">
+					<IncludedMemoryFiles>
+						<File Id="339376474" Language="SFX">
+							<ShortName>Spells\Krotos UI Tech Notification Noise Whoosh Mono.wav</ShortName>
+							<Path>SFX\Spells\Krotos UI Tech Notification Noise Whoosh Mono_11DEC84A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2984435986" Name="character_land" ObjectPath="\Events\Default Work Unit\Characters\character_land" DurationType="OneShot" DurationMin="0.186585" DurationMax="0.589826">
 					<IncludedMemoryFiles>
 						<File Id="49038932" Language="SFX">
@@ -542,6 +562,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1414116942" Name="character_low_health" ObjectPath="\Events\Default Work Unit\Characters\character_low_health" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="411141061" Language="SFX">
+							<ShortName>Character\Heartbeat, 45 Beats Per Minute SND13600 1.wav</ShortName>
+							<Path>SFX\Character\Heartbeat, 45 Beats Per Minute SND13600 1_05AC0351.wem</Path>
+						</File>
+						<File Id="1070648722" Language="SFX">
+							<ShortName>Character\Heartbeat, 101 Beats Per Minute SND13596.wav</ShortName>
+							<Path>SFX\Character\Heartbeat, 101 Beats Per Minute SND13596_823B0723.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="509606434" Name="fire_spell" ObjectPath="\Events\Default Work Unit\Spells\fire_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<SwitchContainers/>
 				</Event>
@@ -592,6 +624,9 @@
 					<SwitchContainers/>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="2760765373" Name="rtpc_player_health" ObjectPath="\Game Parameters\Default Work Unit\rtpc_player_health"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="556887514" Name="Locomotion" ObjectPath="\Switches\Default Work Unit\Locomotion">
 					<Switches>

@@ -18,6 +18,9 @@
 				<AuxBus Id="2134960294" Name="SmallReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\SmallReverb"/>
 				<AuxBus Id="3684725634" Name="LargeReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\LargeReverb"/>
 			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="2564988978" Name="rtpc_master_volume" ObjectPath="\Game Parameters\Default Work Unit\rtpc_master_volume"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

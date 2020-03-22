@@ -44,11 +44,6 @@ State	ID	Name	State Group			Notes
 	1160234136	Normal	Health			
 	2534871658	Critical	Health			
 
-Custom State	ID	Name	State Group	Owner		Notes
-	452650520	Low	Health	\Actor-Mixer Hierarchy\Default Work Unit\Characters\Health		
-	824722887	Normal	Health	\Actor-Mixer Hierarchy\Default Work Unit\Characters\Health		
-	1042140149	Critical	Health	\Actor-Mixer Hierarchy\Default Work Unit\Characters\Health		
-
 Modulator Time	ID	Name			Wwise Object Path	Notes
 	962167441	Modulator Time (Custom)				
 

@@ -14,7 +14,7 @@
 						<Switch Name="Wall" ID="{C8A316B9-2DB8-4DE0-9E5F-A1F7A6634C87}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
-						<GameParameterRef Name="rtpc_intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
+						<GameParameterRef Name="Intensity" ID="{B85722D1-CF8F-4A21-9A5B-93DA9D42CADE}"/>
 						<Curve Name="" ID="{04594CE9-02F1-4468-8973-6F5F13A02A5B}">
 							<PropertyList>
 								<Property Name="Flags" Type="int32" Value="65537"/>

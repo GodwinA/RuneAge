@@ -13,17 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMBIENCE_INSIDE_CAVE = 1476656008U;
-        static const AkUniqueID AMBIENCE_INSIDE_ROOM = 2032244766U;
+        static const AkUniqueID AMBIENCE_INSIDE = 3695937480U;
         static const AkUniqueID AMBIENCE_OUTSIDE = 3996256281U;
         static const AkUniqueID ARCANE_SPELL = 2637742288U;
-        static const AkUniqueID CHARACTER_CAST_SPELL = 4231402215U;
-        static const AkUniqueID CHARACTER_DIE = 2990357609U;
+        static const AkUniqueID CAST_SPELL = 4080882651U;
         static const AkUniqueID CHARACTER_FOOTSTEPS = 2775932802U;
         static const AkUniqueID CHARACTER_JUMP = 118266349U;
-        static const AkUniqueID CHARACTER_KILL = 3148586457U;
         static const AkUniqueID CHARACTER_LAND = 2984435986U;
-        static const AkUniqueID CHARACTER_LOW_HEALTH = 1414116942U;
         static const AkUniqueID FIRE_SPELL = 509606434U;
         static const AkUniqueID LIGHTNING_SPELL = 7154402U;
         static const AkUniqueID ROCK_SPELL = 3371098341U;
@@ -103,10 +99,8 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID INTENSITY = 2470328564U;
         static const AkUniqueID RTPC_AREA_FADE_DISTANCE = 1799335409U;
-        static const AkUniqueID RTPC_INTENSITY = 2582146478U;
-        static const AkUniqueID RTPC_MASTER_VOLUME = 2564988978U;
-        static const AkUniqueID RTPC_PLAYER_HEALTH = 2760765373U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

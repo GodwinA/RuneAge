@@ -4,36 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{D2CD37C3-B06D-40D3-BBC5-28E107276D3E}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{C93001E7-926E-426C-B55B-AC0D41EC3923}" ShortID="442305107">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="rtpc_master_volume" ID="{8E8FF115-3503-4533-AA40-D832CCF6F654}" WorkUnitID="{EAB7186B-A257-4396-A880-94F5BF2CBB8C}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{C1ED3587-6352-4E2B-8C3B-EC7DC08CA4A6}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{D7AA39C4-6D94-49EC-A90F-FB10E4BCB7E1}" WorkUnitID="{7342A2F3-876B-4B19-A017-259E360A5F35}"/>
@@ -89,14 +59,11 @@
 						</Bus>
 						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}"/>
 						<AuxBus Name="Reverb" ID="{B271A05A-EAB9-4DC0-941F-0935612B16A8}">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-							</PropertyList>
 							<ChildrenList>
 								<AuxBus Name="LargeReverb" ID="{188A1010-DD3B-4710-9FCB-FA498074FBF8}">
 									<ReferenceList>
-										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
-											<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Holy" ID="{CC7B8638-C670-4AD5-B3FB-331EA81037F6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 									</ReferenceList>
 								</AuxBus>
@@ -115,9 +82,6 @@
 									</ReferenceList>
 								</AuxBus>
 							</ChildrenList>
-							<PositioningInfo>
-								<Panner Name="" ID="{7917DC7D-3A2D-42B9-B1D1-38F515F867F6}"/>
-							</PositioningInfo>
 						</AuxBus>
 					</ChildrenList>
 				</Bus>

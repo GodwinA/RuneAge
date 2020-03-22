@@ -32,6 +32,19 @@ namespace AK
 
     namespace STATES
     {
+        namespace HEALTH
+        {
+            static const AkUniqueID GROUP = 3677180323U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CRITICAL = 2534871658U;
+                static const AkUniqueID LOW = 545371365U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
+            } // namespace STATE
+        } // namespace HEALTH
+
         namespace LOCATION
         {
             static const AkUniqueID GROUP = 1176052424U;
@@ -106,7 +119,6 @@ namespace AK
         static const AkUniqueID RTPC_AREA_FADE_DISTANCE = 1799335409U;
         static const AkUniqueID RTPC_INTENSITY = 2582146478U;
         static const AkUniqueID RTPC_MASTER_VOLUME = 2564988978U;
-        static const AkUniqueID RTPC_PLAYER_HEALTH = 2760765373U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

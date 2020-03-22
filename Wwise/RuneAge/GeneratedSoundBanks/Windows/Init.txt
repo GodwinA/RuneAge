@@ -13,6 +13,7 @@ Switch	ID	Name	Switch Group			Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	1176052424	Location			\Default Work Unit\Location	
 	3020443768	Shape			\Default Work Unit\Shape	
+	3677180323	Health			\Default Work Unit\Health	
 
 State	ID	Name	State Group			Notes
 	438105790	Outside	Location			
@@ -20,9 +21,19 @@ State	ID	Name	State Group			Notes
 	3553349781	Inside	Location			
 	748895195	None	Shape			
 	3478592334	Sphere	Shape			
+	545371365	Low	Health			
+	748895195	None	Health			
+	1160234136	Normal	Health			
+	2534871658	Critical	Health			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	22009707	Low	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+	50168313	Low	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	105044046	Critical	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	178705924	Inside	Location	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience\Ambience_Outside		
+	444306104	Critical	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience		
+	877122135	Low	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience		
+	977966029	Critical	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2564988978	rtpc_master_volume			\Default Work Unit\rtpc_master_volume	

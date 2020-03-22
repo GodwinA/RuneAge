@@ -448,7 +448,7 @@
 					<IncludedMemoryFiles>
 						<File Id="339376474" Language="SFX">
 							<ShortName>Spells\Krotos UI Tech Notification Noise Whoosh Mono.wav</ShortName>
-							<Path>SFX\Spells\Krotos UI Tech Notification Noise Whoosh Mono_11DEC84A.wem</Path>
+							<Path>SFX\Spells\Krotos UI Tech Notification Noise Whoosh Mono_FAC8D44F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -549,13 +549,25 @@
 					<IncludedMemoryFiles>
 						<File Id="411141061" Language="SFX">
 							<ShortName>Character\Heartbeat, 45 Beats Per Minute SND13600 1.wav</ShortName>
-							<Path>SFX\Character\Heartbeat, 45 Beats Per Minute SND13600 1_05AC0351.wem</Path>
+							<Path>SFX\Character\Heartbeat, 45 Beats Per Minute SND13600 1_5A54B41F.wem</Path>
 						</File>
 						<File Id="1070648722" Language="SFX">
 							<ShortName>Character\Heartbeat, 101 Beats Per Minute SND13596.wav</ShortName>
-							<Path>SFX\Character\Heartbeat, 101 Beats Per Minute SND13596_823B0723.wem</Path>
+							<Path>SFX\Character\Heartbeat, 101 Beats Per Minute SND13596_AE60CA83.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BCB5CF25-45BC-4A77-A62A-E46D2991C481}">
+							<Media>
+								<File Id="411141061"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}">
+							<Media>
+								<File Id="1070648722"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="509606434" Name="fire_spell" ObjectPath="\Events\Default Work Unit\Spells\fire_spell" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<SwitchContainers/>
@@ -607,9 +619,16 @@
 					<SwitchContainers/>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="2760765373" Name="rtpc_player_health" ObjectPath="\Game Parameters\Default Work Unit\rtpc_player_health"/>
-			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3677180323" Name="Health" ObjectPath="\States\Default Work Unit\Health">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Health\None"/>
+						<State Id="1160234136" Name="Normal" ObjectPath="\States\Default Work Unit\Health\Normal"/>
+						<State Id="2534871658" Name="Critical" ObjectPath="\States\Default Work Unit\Health\Critical"/>
+						<State Id="545371365" Name="Low" ObjectPath="\States\Default Work Unit\Health\Low"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="556887514" Name="Locomotion" ObjectPath="\Switches\Default Work Unit\Locomotion">
 					<Switches>

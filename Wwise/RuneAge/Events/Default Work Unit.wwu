@@ -132,6 +132,17 @@
 						</Event>
 						<Event Name="character_die" ID="{05B9AD21-8141-4919-B49F-36AD6DF79730}">
 							<ChildrenList>
+								<Action Name="" ID="{6AC23DAC-59B9-499A-8C36-EED79F4D13E6}" ShortID="581804210">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Health" ID="{995A21F9-DC31-443C-9671-ADC8FE6E9006}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{BA4BD5BC-5314-4A87-8A7E-2266CF80705A}" ShortID="624323485">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -146,7 +157,7 @@
 								<Action Name="" ID="{FC8E3031-CC69-461D-B3B4-C004BB4F51EB}" ShortID="973740768">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Low Health" ID="{995A21F9-DC31-443C-9671-ADC8FE6E9006}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
+											<ObjectRef Name="Health" ID="{995A21F9-DC31-443C-9671-ADC8FE6E9006}" WorkUnitID="{BDD28FAF-B93C-456C-BF7F-02335E091D32}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

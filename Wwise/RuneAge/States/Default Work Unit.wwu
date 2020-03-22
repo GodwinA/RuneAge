@@ -36,6 +36,17 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Health" ID="{29B7C79A-C4A4-475F-A69A-64659A15DEF9}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{0B673150-4552-409B-8EDF-840E426811F8}"/>
+						<State Name="Normal" ID="{3DD4386A-599D-4B05-B02F-3B674DEF1B6B}"/>
+						<State Name="Critical" ID="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}"/>
+						<State Name="Low" ID="{BCB5CF25-45BC-4A77-A62A-E46D2991C481}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

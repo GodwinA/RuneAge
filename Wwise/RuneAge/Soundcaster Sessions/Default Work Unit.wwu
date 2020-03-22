@@ -12,10 +12,6 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="rtpc_player_health" ID="{E4216021-9EA8-41B1-BC7A-7A26148B046A}"/>
-							<Value>17.6767676767677</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="rtpc_master_volume" ID="{8E8FF115-3503-4533-AA40-D832CCF6F654}"/>
 							<Value>100</Value>
 						</RTPCValue>
@@ -29,7 +25,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{E8522259-4F1F-4B0C-A119-4791CC41B142}"/>
+						<CurrentStateRef Name="Outside" ID="{57F7ED90-47A5-44D8-888B-FC1BABB3BA3B}"/>
+						<CurrentStateRef Name="Critical" ID="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Crouching" ID="{72BD6576-9AAE-4CC8-86F4-E322A61C7348}"/>

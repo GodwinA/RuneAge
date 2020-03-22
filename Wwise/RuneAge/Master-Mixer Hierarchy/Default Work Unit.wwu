@@ -40,7 +40,37 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}"/>
+						<Bus Name="Music" ID="{1B72EE8E-E506-4720-A551-3941CB8583F8}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Health" ID="{29B7C79A-C4A4-475F-A69A-64659A15DEF9}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{BCB5CF25-45BC-4A77-A62A-E46D2991C481}"/>
+										<CustomState Name="" ID="{B72ECCD9-4D74-4375-A36E-5817AE0C7331}" ShortID="50168313">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="50"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{3DD4386A-599D-4B05-B02F-3B674DEF1B6B}"/>
+										<CustomState Name="" ID="{73EE1A71-5611-4151-9990-7850D60F11BB}" ShortID="149838190"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Critical" ID="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}"/>
+										<CustomState Name="" ID="{863AC91D-FB2D-4312-A927-4172AF40A704}" ShortID="105044046">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
 						<Bus Name="Ambience" ID="{7BD2387D-B709-4FB4-90D7-00C5B95096CB}">
 							<ChildrenList>
 								<Bus Name="Ambience_Inside" ID="{0B331508-89A4-41BB-9989-962A6074A765}">
@@ -86,8 +116,67 @@
 									</StateInfo>
 								</Bus>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Health" ID="{29B7C79A-C4A4-475F-A69A-64659A15DEF9}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{BCB5CF25-45BC-4A77-A62A-E46D2991C481}"/>
+										<CustomState Name="" ID="{7BCBA5C9-58C3-4832-AD51-A8855936DDD8}" ShortID="877122135">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="50"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{3DD4386A-599D-4B05-B02F-3B674DEF1B6B}"/>
+										<CustomState Name="" ID="{413DB55A-E023-4052-8D53-BA4F60BA3728}" ShortID="898763358"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Critical" ID="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}"/>
+										<CustomState Name="" ID="{28D7AB31-8AEB-4216-92EB-9A645254BA15}" ShortID="444306104">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
-						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}"/>
+						<Bus Name="SFX" ID="{C01C0BBD-A0B9-4FAF-A04C-C998DCA0A59C}">
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Health" ID="{29B7C79A-C4A4-475F-A69A-64659A15DEF9}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Low" ID="{BCB5CF25-45BC-4A77-A62A-E46D2991C481}"/>
+										<CustomState Name="" ID="{71ECB133-6A9C-4E65-8551-1B2938900AFE}" ShortID="22009707">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="50"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{3DD4386A-599D-4B05-B02F-3B674DEF1B6B}"/>
+										<CustomState Name="" ID="{F24A0800-0267-46FE-9858-51FEEC0A7BD5}" ShortID="876024660"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Critical" ID="{9FB6314F-09A0-4B57-A13A-7D5FD2C830A5}"/>
+										<CustomState Name="" ID="{2268034C-0748-428D-AFCE-FA012FA5427A}" ShortID="977966029">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="70"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
 						<AuxBus Name="Reverb" ID="{B271A05A-EAB9-4DC0-941F-0935612B16A8}">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>

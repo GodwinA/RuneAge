@@ -101,3 +101,8 @@ Wwise/RuneAge/RuneAge.anton.wsettings
 Wwise/RuneAge/.cache/
 Wwise/RuneAge/*.prof
 Wwise/RuneAge/*.validationcache
+
+**Asset Packs**
+Materialize/*
+MedievalDungeon/*
+

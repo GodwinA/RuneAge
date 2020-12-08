@@ -106,6 +106,7 @@ Wwise/RuneAge/*.validationcache
 Materialize/*
 MedievalDungeon/*
 SkeletonArmy/*
+VectorFields/*
 Content/SkeletonArmy/Textures/Warlord/T_SkeletonWarlordArmor_N.uasset
 Content/SkeletonArmy/Textures/Warlord/T_SkeletonWarlordArmor_D.uasset
 Content/SkeletonArmy/Textures/Warlord/T_SkeletonHair_S.uasset
